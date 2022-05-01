@@ -1,7 +1,9 @@
 import streamlit as st
 import glob
-import json_lines
+import jsonlines
 import pandas as pd
+from pprint import pprint
+import random
 
 #Group Introduction Code
 
@@ -23,7 +25,7 @@ with col3:
 
 st.markdown("<h1 style='text-align: center; color: white;'>Twitter Sentiment Analyzer </h1>",unsafe_allow_html=True)
 
-st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 2 for the Twitter Sentiment Analysis topic! <br> <br></h4>",unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Twitter Sentiment Analysis! <br> <br></h4>",unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; color: white;'>Our Team</h4>",unsafe_allow_html=True)
 
@@ -50,9 +52,27 @@ with st.expander("Click here for Projectdiscription", expanded=False):
     
 #First Analysis of data from Olaf Scholz to get into the data
 
+result=st.button("Generate random Olaf Scholz comment", disabled=False)
+st.write(result)
+
 file="Olafscholz.jl"
 
-with json_lines.open(file) as j:
-    for line in j:
-        print(line)
-        break
+texts = []
+dates = []
+
+if result:
+
+    with jsonlines.open(file) as j: 
+        for line in j:
+            data=line['response']['data']
+            for i in range(0, 100):
+                date= data[i]['created_at']
+                text= data[i]['text'] 
+                dates.append(date[:10])
+                texts.append(text)
+                break
+
+
+randomnumber = random.randint(0, 64)
+st.write(dates[randomnumber])
+st.write(texts[randomnumber])  
