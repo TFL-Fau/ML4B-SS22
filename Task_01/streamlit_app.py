@@ -1,3 +1,5 @@
+!pip install -q -U json-lines
+
 import streamlit as st
 import glob
 import json_lines
@@ -59,8 +61,6 @@ file="Olafscholz.jl"
 
 texts = []
 dates = []
-
-
 
 if result:
 
