@@ -65,14 +65,14 @@ if result:
     with jsonlines.open(file) as j: 
         for line in j:
             data=line['response']['data']
-            for i in range(0, 100):
+            for i in range(0, 40):
                 date= data[i]['created_at']
                 text= data[i]['text'] 
                 dates.append(date[:10])
                 texts.append(text)
                 break
 
-    randomnumber = random.randint(1, 100)
+    randomnumber = random.randint(1, 40)
 
     st.write(dates[randomnumber])
     st.write(texts[randomnumber])  
