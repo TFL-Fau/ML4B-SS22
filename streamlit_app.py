@@ -4,7 +4,7 @@ import random
 
 #Group Introduction Code
 
-st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
+st.set_page_config(page_icon="🐤", page_title="Sentiment Analysis of Tweets")
 
 st.write('<base target="_blank">', unsafe_allow_html=True)
 
@@ -22,7 +22,7 @@ with col3:
 
 st.markdown("<h1 style='text-align: center; color: white;'>Twitter Sentiment Analyzer </h1>",unsafe_allow_html=True)
 
-st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Twitter Sentiment Analysis! <br> <br></h4>",unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; color: white;'>Our Team</h4>",unsafe_allow_html=True)
 
