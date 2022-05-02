@@ -7,10 +7,10 @@ from pprint import pprint
 import random
 
 #Group Introduction Code
-twitter=Image.open('/Task_01/logoOfficial.png')
-philip=Image.open('/Task_01/Philip_Maron.jpg')
-tobi=Image.open('/Task_01/Tobias_Fleming.jpg')
-thies=Image.open('/Task_01/Thies_Freudenthal_Maske_neu.png')
+twitter=Image.open('logoOfficial.png')
+philip=Image.open('Philip_Maron.jpg')
+tobi=Image.open('Tobias_Fleming.jpg')
+thies=Image.open('Thies_Freudenthal_Maske_neu.png')
 
 
 st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
