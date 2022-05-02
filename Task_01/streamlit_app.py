@@ -1,4 +1,4 @@
-!pip install -q -U json-lines
+pip install -q -U json-lines
 
 import streamlit as st
 import glob
