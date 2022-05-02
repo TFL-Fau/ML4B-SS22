@@ -53,12 +53,14 @@ with st.expander("Click here for Projectdiscription", expanded=False):
 #First Analysis of data from Olaf Scholz to get into the data
 
 result=st.button("Generate random Olaf Scholz comment", disabled=False)
-st.write(result)
+#st.write(result)
 
 file="Olafscholz.jl"
 
 texts = []
 dates = []
+
+
 
 if result:
 
@@ -72,7 +74,7 @@ if result:
                 texts.append(text)
                 break
 
+    randomnumber = random.randint(1, 100)
 
-randomnumber = random.randint(0, 64)
-st.write(dates[randomnumber])
-st.write(texts[randomnumber])  
+    st.write(dates[randomnumber])
+    st.write(texts[randomnumber])  
