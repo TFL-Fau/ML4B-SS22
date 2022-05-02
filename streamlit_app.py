@@ -20,7 +20,7 @@ with col2:
 with col3:
     st.write(' ')
 
-st.markdown("<h1 style='text-align: center; color: white;'>Twitter Sentiment Analyzer </h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
 
