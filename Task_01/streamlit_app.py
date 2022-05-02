@@ -1,8 +1,6 @@
-pip install json-lines
-
 import streamlit as st
 import glob
-import json_lines
+import json
 import pandas as pd
 from pprint import pprint
 import random
@@ -64,7 +62,7 @@ dates = []
 
 if result:
 
-    with json_lines.open(file) as j: 
+    with jwith open("file", "r") as j: 
         for line in j:
             data=line['response']['data']
             for i in range(0, 100):
