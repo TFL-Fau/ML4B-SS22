@@ -1,11 +1,17 @@
 import streamlit as st
 import glob
+from PIL import Image
 import jsonlines
 import pandas as pd
 from pprint import pprint
 import random
 
 #Group Introduction Code
+twitter=Image.open('/Task_01/logoOfficial.png')
+philip=Image.open('/Task_01/Philip_Maron.jpg')
+tobi=Image.open('/Task_01/Tobias_Fleming.jpg')
+thies=Image.open('/Task_01/Thies_Freudenthal_Maske_neu.png')
+
 
 st.set_page_config(page_icon="🐤", page_title="Twitter Sentiment Analyzer")
 
@@ -18,7 +24,7 @@ with col1:
 
 with col2:
     
-    st.image("/Task_01/logoOfficial.png", width=100)
+    st.image(twitter, width=100)
 
 with col3:
     st.write(' ')
@@ -33,15 +39,15 @@ with st.expander("Click here for Team presentation", expanded=False):
     row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
     with row1_1:
         st.subheader("1. Teammember")
-        st.image("/Task_01/Philip_Maron.jpg", width=215)
+        st.image(philip, width=215)
         st.markdown("<p style='text-align: center; color: white;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
     with row1_2:
         st.subheader("2. Teammember")
-        st.image("/Task_01/Tobias_Fleming.jpg", width=200)
+        st.image(tobi, width=200)
         st.markdown("<p style='text-align: center; color: white;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
     with row1_3:
         st.subheader("3. Teammember")
-        st.image("/Task_01/Thies_Freudenthal_Maske_neu.png", width=219)
+        st.image(thies, width=219)
         st.markdown("<p front-size= 30px style='text-align: center; color: white;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; color: white;'>Projectdiscription</h4>",unsafe_allow_html=True)
