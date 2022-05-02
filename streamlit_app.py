@@ -49,6 +49,7 @@ with st.expander("Click here for Projectdiscription", expanded=False):
     
 #First Analysis of data from Olaf Scholz to get into the data and generating random Olar Scholz comment
 
+st.write(' ')
 result=st.button("Generate random Olaf Scholz comment", disabled=False)
 #st.write(result)
 
