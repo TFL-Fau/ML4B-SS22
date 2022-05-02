@@ -62,7 +62,7 @@ dates = []
 
 if result:
 
-    with jwith open("file", "r") as j: 
+    with open("file", "r") as j: 
         for line in j:
             data=line['response']['data']
             for i in range(0, 100):
