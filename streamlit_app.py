@@ -18,7 +18,7 @@ with col1:
 
 with col2:
     
-    st.image("Task_01/logoOfficial.png", width=100)
+    st.image("logoOfficial.png", width=100)
 
 with col3:
     st.write(' ')
