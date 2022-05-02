@@ -55,7 +55,7 @@ with st.expander("Click here for Projectdiscription", expanded=False):
 result=st.button("Generate random Olaf Scholz comment", disabled=False)
 #st.write(result)
 
-file="Olafscholz.jl"
+file="OlafScholz.jl"
 
 texts = []
 dates = []
