@@ -13,8 +13,9 @@
 </div>
 
 <div>
-## Link to the Streamlit Version
-<a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main"> Streamlit App </a>
+
+## Link to the Streamlit Version<br>
+<a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main"> Streamlit App </a><br>
 ### Explanation of the functionality
 </div>
 
