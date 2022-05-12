@@ -1,11 +1,13 @@
 # Sentiment Analysis ML4B
 
 <div>
+
 ## Description
 </div>
 
 <div>
-###Getting Started
+
+### Getting Started
 
 ### Installation
 </div>
@@ -17,6 +19,7 @@
 </div>
 
 <div>
+
 ## Background Information
 
 ### Literature
