@@ -1,11 +1,13 @@
 # Sentiment Analysis ML4B
 
 <div>
+
 ## Description
 </div>
 
 <div>
-###Getting Started
+
+### Getting Started
 
 ### Installation
 </div>
@@ -17,6 +19,7 @@
 </div>
 
 <div>
+
 ## Background Information
 
 ### Literature
@@ -26,7 +29,8 @@
 * Sentiment Analysis on Food Delivery: https://www.emerald.com/insight/content/doi/10.1108/GKMC-04-2020-0056/full/html?casa_token=YOF3ob-yvKgAAAAA:DU8s787l35nVGJeyGEvjqk8zdnSHqYH_lio5W2UFNvgjTASBXmYhbqatibXznf2R3ELJG4gYwEYpali3T9SD3kXyBYP0Z_uM0de0T65XbBMzGBmTBY7eng
 * Sentiment Analysis Isreal: https://arxiv.org/abs/2204.06515
 * Sentiment Analysis Cross Party: https://arxiv.org/abs/2202.00396
-* Sentiment Analysis NLP and others: 
+* Sentiment Analysis NLP and others: https://arxiv.org/abs/2110.00859
+
 
 ### Code Examples
 * Sentiment Analysis - Stock Market: https://paperswithcode.com/paper/sentiment-analysis-of-twitter-data-for
