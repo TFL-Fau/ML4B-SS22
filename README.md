@@ -31,6 +31,20 @@
 * Sentiment Analysis Isreal: https://arxiv.org/abs/2204.06515
 * Sentiment Analysis Cross Party: https://arxiv.org/abs/2202.00396
 * Sentiment Analysis NLP and others: https://arxiv.org/abs/2110.00859
+* Sentiment and structure in word co-occurrence networks on Twitter:
+https://link.springer.com/article/10.1007/s41109-022-00446-2
+* Task-agnostic representation learning of multimodal twitter data for downstream applications:
+https://link.springer.com/article/10.1186/s40537-022-00570-x
+* Social media analytics system for action inspection on social networks:
+https://link.springer.com/article/10.1007/s13278-021-00853-w
+* Modeling the public attitude towards organic foods: a big data and text mining: approachhttps://link.springer.com/article/10.1186/s40537-021-00551-6
+* A big data analysis of Twitter data during premier league matches: do tweets contain information valuable for in-play forecasting of goals in football?:
+https://link.springer.com/article/10.1007/s13278-021-00842-z
+* Understanding the effects of message cues on COVID-19 information sharing on Twitter:
+https://asistdl.onlinelibrary.wiley.com/doi/full/10.1002/asi.24587
+* A Deep Learning Approach for Sentiment Analysis of COVID-19 Reviews:
+https://www.mdpi.com/2076-3417/12/8/3709
+
 
 
 ### Code Examples
