@@ -111,40 +111,40 @@ with st.expander("Show our dataframe", expanded=False):
     st.markdown("<h4 style='text-align: center; color: white;'>Our Dataframe</h4>",unsafe_allow_html=True)
     st.write(' ')
     
-        olafScholzJsonLines = jsonlines.open("OlafScholz.jl")
-        df = pd.DataFrame(columns = ["target", "tweetid", "date", "time", "user", "text"])
+    olafScholzJsonLines = jsonlines.open("OlafScholz.jl")
+    df = pd.DataFrame(columns = ["target", "tweetid", "date", "time", "user", "text"])
   
-        iterator = 0
+    iterator = 0
 
-        for line in olafScholzJsonLines:
-            keyResponse = line["response"]
-            data = keyResponse["data"]
-            newDataRow = [None, None, None, None, None, None]
-            userName = line["account_name"]
-            newDataRow[4] = userName
-            keyResponse = line["response"]
-            data = keyResponse["data"]
+    for line in olafScholzJsonLines:
+        keyResponse = line["response"]
+        data = keyResponse["data"]
+        newDataRow = [None, None, None, None, None, None]
+        userName = line["account_name"]
+        newDataRow[4] = userName
+        keyResponse = line["response"]
+        data = keyResponse["data"]
 
 
-            for tweet in data:
-             
-                tweetTarget = None
-                tweetID = tweet["id"]
-                authorID = tweet["author_id"]
-                tweetDate = tweet["created_at"][0:10]
-                tweetTime = tweet["created_at"][11:19]
-                tweetText = tweet["text"]
-                newDataRow[0] = tweetTarget
-                newDataRow[1] = tweetID
-                newDataRow[2] = tweetDate
-                newDataRow[3] = tweetTime
-                #
-                newDataRow[4] = authorID
-                newDataRow[5] = tweetText
-                
-                df.loc[len(df)] = newDataRow
-                
-            iterator += 1
+        for tweet in data:
+
+            tweetTarget = None
+            tweetID = tweet["id"]
+            authorID = tweet["author_id"]
+            tweetDate = tweet["created_at"][0:10]
+            tweetTime = tweet["created_at"][11:19]
+            tweetText = tweet["text"]
+            newDataRow[0] = tweetTarget
+            newDataRow[1] = tweetID
+            newDataRow[2] = tweetDate
+            newDataRow[3] = tweetTime
+            #
+            newDataRow[4] = authorID
+            newDataRow[5] = tweetText
+
+            df.loc[len(df)] = newDataRow
+
+        iterator += 1
         st.write('Anzahl an Zeilen und Spalten')
         st.write(df.shape)
         st.write(df.head(20))
