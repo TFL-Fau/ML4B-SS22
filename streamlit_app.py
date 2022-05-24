@@ -110,8 +110,7 @@ with st.expander("Show our dataframe", expanded=False):
 
     st.markdown("<h4 style='text-align: center; color: white;'>Our Dataframe</h4>",unsafe_allow_html=True)
     st.write(' ')
-    showdf=st.button("Show information about our Dataframe", disabled=False)
-    if showdf:
+    
         olafScholzJsonLines = jsonlines.open("OlafScholz.jl")
         df = pd.DataFrame(columns = ["target", "tweetid", "date", "time", "user", "text"])
   
