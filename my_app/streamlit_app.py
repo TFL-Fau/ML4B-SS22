@@ -12,6 +12,8 @@ st.set_page_config(page_icon="🐤", page_title="Sentiment Analysis of Tweets")
 
 st.write('<base target="_blank">', unsafe_allow_html=True)
 
+# Columns to position twitter logo in middle
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -24,69 +26,67 @@ with col2:
 with col3:
     st.write(' ')
 
-st.markdown("<h1 style='text-align: center; color: white;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
+# Heading and Topic
 
-st.markdown("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
+st.write("<h1 style='text-align: center; color: white;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
 
-st.markdown("<h4 style='text-align: center; color: white;'>Our Team</h4>",unsafe_allow_html=True)
+st.write("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
 
-with st.expander("Click here for Team presentation", expanded=False):
-    row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
-    with row1_1:
-        st.subheader("1. Teammember")
-        st.image("Philip.jpg", width=215)
-        st.markdown("<p style='text-align: center; color: white;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
-    with row1_2:
-        st.subheader("2. Teammember")
-        st.image("Tobias.jpg", width=200)
-        st.markdown("<p style='text-align: center; color: white;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
-    with row1_3:
-        st.subheader("3. Teammember")
-        st.image("Thies.png", width=219)
-        st.markdown("<p front-size= 30px style='text-align: center; color: white;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
+# Project Description
 
-st.markdown("<h4 style='text-align: center; color: white;'>Projectdiscription</h4>",unsafe_allow_html=True)
-
-with st.expander("Click here for Projectdiscription", expanded=False):
-    
-    st.markdown("<h5 style='text-align: center; color: white;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
+st.write("<h3 style='text-align: center; color: white;'>Projectdiscription & Team </h3>",unsafe_allow_html=True)
+st.write("<h5 style='text-align: center; color: white;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
+row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
+with row1_1:
+    st.image("Philip.jpg", width=215)
+    st.write("<p style='text-align: center; color: white;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
+with row1_2:
+    st.image("Tobias.jpg", width=200)
+    st.write("<p style='text-align: center; color: white;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
+with row1_3:
+    st.image("Thies.png", width=219)
+    st.write("<p front-size= 30px style='text-align: center; color: white;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
     
 #First Analysis of data from Olaf Scholz to get into the data and generating random Olar Scholz comment
 
-st.write(' ')
-result=st.button("Generate random Olaf Scholz comment", disabled=False)
-#st.write(result)
+with st.expander("1. Task: Generate random Application", expanded=False):
+    st.write(' ')
+    result=st.button("Generate random Olaf Scholz comment", disabled=False)
+    #st.write(result)
 
-file="OlafScholz.jl"
+    file="OlafScholz.jl"
 
-texts = []
-dates = []
+    texts = []
+    dates = []
 
-if result:
+    if result:
+        with jsonlines.open(file) as j: 
+            for line in j:
+                data=line['response']['data']
+                for i in range(0, 60):
+                    date= data[i]['created_at']
+                    text= data[i]['text'] 
+                    dates.append(date[:10])
+                    texts.append(text)
+                    break
 
-    with jsonlines.open(file) as j: 
-        for line in j:
-            data=line['response']['data']
-            for i in range(0, 60):
-                date= data[i]['created_at']
-                text= data[i]['text'] 
-                dates.append(date[:10])
-                texts.append(text)
-                break
+        randomnumber = random.randint(1, 60)
 
-    randomnumber = random.randint(1, 60)
+        st.write(dates[randomnumber])
+        st.write(texts[randomnumber])       
 
-    st.write(dates[randomnumber])
-    st.write(texts[randomnumber])  
-with st.expander("Analyzing given Dataset", expanded=False):
+# Analyzing given Data and creating Dataframe
+        
+with st.expander("2. Task: Analyzing given Data and creating Dataframe", expanded=False):
     # Analyzing given dataset
 
-    st.markdown("<h4 style='text-align: center; color: white;'>Analysing Dataset for our Dataframe</h4>",unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center; color: white;'>Analysing Dataset for our Dataframe</h4>",unsafe_allow_html=True)
     st.write(' ')
     st.write('- Analyzing the given Dataset')
     st.write('- Looking for useful parameters to create a dataset')
     st.write(' ')
     showana=st.button("Show Dataset Analysis", disabled=False)
+    
     if showana:
         with jsonlines.open(file) as j:
             for line in j:
@@ -99,112 +99,41 @@ with st.expander("Analyzing given Dataset", expanded=False):
                  st.write('Keys von data in response: ')
                  st.write(line['response']['data'][0].keys())
                  break
-    st.write('Parameters filtered for new dataframe: ')
-    st.write('- target: To store the outcome of our analysis')
+    st.write('Parameters filtered for dataframe: ')
     st.write('- tweetid: Given from response, data and id')
-    st.write('- user: Given from response, data and author_id')
+    st.write('- datetime: Given from response, data and created at')
     st.write('- date: Given from response, data and created at')
     st.write('- time: Given from response, data and created at')
+    st.write('- user: Given from response, data and author_id')
     st.write('- text: Given from response, data and text')
     
-with st.expander("Show our dataframe", expanded=False):
-    # Creating dataframe
 
-    st.markdown("<h4 style='text-align: center; color: white;'>Our Dataframe</h4>",unsafe_allow_html=True)
+#image = Image.open('dataframepic.png')
+#st.image(image, caption='Number of tweets per year')
+
+# Preprocessing of our Dataframe
+
+with st.expander("3. Task: Preprocessing of our Dataframe", expanded=False):
+
+    st.write("<h4 style='text-align: center; color: white;'>Preprocessing of our Dataframe</h4>",unsafe_allow_html=True)
+    st.write('- Converted the datetime column with pd.to_datetime to use for diagrams etc.')
+    st.write('- Removed Retweets from the dataframe')
+    st.write('- Checked the language of the tweets')
+    st.write('- Added the language of the tweet in a new column')
+    st.write('- Removed the non german tweets')
+
+# Goals for the Data Analysis of tweets  
+
+with st.expander("4. Task: Goals for the Data Analysis of tweets", expanded=False):
+
+    st.write("<h4 style='text-align: center; color: white;'>Goals for the Data Analysis of tweets</h4>",unsafe_allow_html=True)
+    st.write('Our Goal: ')
+    st.write('- Visualize used words and content in different ways')
+    st.write('- Sentiment and Polarity Analysis')
+    st.write('- Latent Dirichlet Allocation (LDA)')
+    st.write('- Topic Modeling')
+    st.write('- Emotion Analysis')
+    st.write('- Comparison and Contrast of sentiment and emotion analysis')
     st.write(' ')
-    showdf=st.button("Show information about our Dataframe", disabled=False)
-    if showdf:
-        olafScholzJsonLines = jsonlines.open("OlafScholz.jl")
-        df = pd.DataFrame(columns = ["target", "tweetid", "date", "time", "user", "text"])
-  
-        iterator = 0
-
-        for line in olafScholzJsonLines:
-            keyResponse = line["response"]
-            data = keyResponse["data"]
-            newDataRow = [None, None, None, None, None, None]
-            userName = line["account_name"]
-            newDataRow[4] = userName
-            keyResponse = line["response"]
-            data = keyResponse["data"]
-
-
-            for tweet in data:
-             
-                tweetTarget = None
-                tweetID = tweet["id"]
-                authorID = tweet["author_id"]
-                tweetDate = tweet["created_at"][0:10]
-                tweetTime = tweet["created_at"][11:19]
-                tweetText = tweet["text"]
-                newDataRow[0] = tweetTarget
-                newDataRow[1] = tweetID
-                newDataRow[2] = tweetDate
-                newDataRow[3] = tweetTime
-                #
-                newDataRow[4] = authorID
-                newDataRow[5] = tweetText
-                
-                df.loc[len(df)] = newDataRow
-                
-            iterator += 1
-        st.write('Anzahl an Zeilen und Spalten')
-        st.write(df.shape)
-        st.write(df.head(20))
-
-with st.expander("Analyze data from Dataframe", expanded=False):
-    # Creating dataframe
-
-    st.markdown("<h4 style='text-align: center; color: white;'>Analyze data from Dataframe</h4>",unsafe_allow_html=True)
-    st.write(' ')
-    showa=st.button("Show analyze", disabled=False)
-    if showa:
+    st.write('On "page 2" we analyzed the tweets of 5 politicians per political party in the german bundestag 2022.')
           
-        olafScholzJsonLines = jsonlines.open("OlafScholz.jl")
-        df = pd.DataFrame(columns = ["target", "tweetid", "date", "time", "user", "text"])
-  
-        iterator = 0
-
-        for line in olafScholzJsonLines:
-            keyResponse = line["response"]
-            data = keyResponse["data"]
-            newDataRow = [None, None, None, None, None, None]
-            userName = line["account_name"]
-            newDataRow[4] = userName
-            keyResponse = line["response"]
-            data = keyResponse["data"]
-
-
-            for tweet in data:
-             
-                tweetTarget = None
-                tweetID = tweet["id"]
-                authorID = tweet["author_id"]
-                tweetDate = tweet["created_at"][0:10]
-                tweetTime = tweet["created_at"][11:19]
-                tweetText = tweet["text"]
-                newDataRow[0] = tweetTarget
-                newDataRow[1] = tweetID
-                newDataRow[2] = tweetDate
-                newDataRow[3] = tweetTime
-                #
-                newDataRow[4] = authorID
-                newDataRow[5] = tweetText
-                
-                df.loc[len(df)] = newDataRow
-                
-            iterator += 1
-        st.write('First date:')
-        st.write(df['date'].min())
-        st.write('Last date:')
-        st.write(df['date'].max())
-
-        image = Image.open('dataframepic.png')
-
-        st.image(image, caption='Number of tweets per year')
-    
-    
-    
-    
-    
-            
