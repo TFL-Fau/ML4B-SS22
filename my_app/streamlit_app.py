@@ -8,7 +8,7 @@ from PIL import Image
 
 #Group Introduction Code
 
-st.set_page_config(page_icon="🐤", page_title="Sentiment Analysis of Tweets")
+st.set_page_config(page_icon="🕊️", page_title="German Twitter Analysis")
 
 st.write('<base target="_blank">', unsafe_allow_html=True)
 
