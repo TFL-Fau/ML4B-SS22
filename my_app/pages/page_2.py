@@ -25,6 +25,8 @@ with col3:
 st.write("<h1 style='text-align: center; color: white;'>Analysis of Tweets</h1>",unsafe_allow_html=True)
 st.write("<h4 style='text-align: center; color: white;'>Please select a politican from one of the given political parties to show the analytic data.</h4>",unsafe_allow_html=True)
 
+# Selecting political party and politician
+
 optionpp = st.selectbox(
      'Political Party',
      ('- Select -', 'AFD', 'CDU/CSU', 'SPD', 'Bündnis90/Die Grünen', 'Die Linke', 'FDP'))
