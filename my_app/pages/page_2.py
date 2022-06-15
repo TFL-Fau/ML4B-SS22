@@ -27,7 +27,7 @@ st.write("<h4 style='text-align: center; color: white;'>Please select a politica
 
 optionpp = st.selectbox(
      'Political Party',
-     ('AFD', 'CDU/CSU', 'SPD', 'Bündnis90/Die Grünen', 'Die Linke', 'FDP'))
+     ('- Select -', 'AFD', 'CDU/CSU', 'SPD', 'Bündnis90/Die Grünen', 'Die Linke', 'FDP'))
 
 if optionpp=='AFD':
    st.write('You selected the political party:', optionpp)
