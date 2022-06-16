@@ -45,7 +45,7 @@ elif optionpp=='SPD':
    st.write('You selected the political party:', optionpp + ".")
    optionspd = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('- Select -', 'Olaf Scholz', 'Kevin Kühnert',  'Prof. Dr. Karl Lauterbach', 'Saskia Esken''))
+     ('- Select -', 'Olaf Scholz', 'Kevin Kühnert',  'Prof. Dr. Karl Lauterbach', 'Saskia Esken'))
    # Data of SPD politicians
 
    # First Olaf Scholz
