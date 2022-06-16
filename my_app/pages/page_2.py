@@ -135,8 +135,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/scholz/os21.png", width=800)
     
     
-    else if optionspd == 'Kevin Kühnert':
-        
+   if optionspd == 'Kevin Kühnert':
         st.write("hi")
     
     
