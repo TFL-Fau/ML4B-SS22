@@ -139,8 +139,8 @@ elif optionpp=='SPD':
 
    if optionspd == 'Kevin Kühnert':  
         st.write('You selected the politician:', optionspd + ".")
-        st.write('Time needed to process data: 04:30,89 min.')
-        st.write('Number of tweets: 4119.')
+        st.write('Time needed to process data: 07:48,31 min.')
+        st.write('Number of tweets: 8376.')
         st.write(" ")
         st.write(" ")
         st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
