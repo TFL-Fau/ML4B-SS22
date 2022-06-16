@@ -133,12 +133,7 @@ elif optionpp=='SPD':
         st.write("Show the percentage of tweets which share the emotion and sentiment:")
         st.image("Analytics_Result/spd/scholz/os20.png", width=800)
         st.image("Analytics_Result/spd/scholz/os21.png", width=800)
-    
-    
-   if optionspd == 'Kevin Kühnert':
-        st.write("hi")
-    
-    
+        
     
     
 elif optionpp=='Bündnis90/Die Grünen':
