@@ -45,7 +45,7 @@ elif optionpp=='SPD':
    st.write('You selected the political party:', optionpp + ".")
    optionspd = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('- Select -', 'Olaf Scholz', 'Christine Lambrecht', 'Saskia Esken', 'Kevin Kühnert', 'Prof. Dr. Karl Lauterbach'))
+     ('- Select -', 'Olaf Scholz', 'Kevin Kühnert',  'Prof. Dr. Karl Lauterbach', 'Saskia Esken''))
    # Data of SPD politicians
 
    # First Olaf Scholz
@@ -133,7 +133,15 @@ elif optionpp=='SPD':
         st.write("Show the percentage of tweets which share the emotion and sentiment:")
         st.image("Analytics_Result/spd/scholz/os20.png", width=800)
         st.image("Analytics_Result/spd/scholz/os21.png", width=800)
+    
+    
+    else if optionspd == 'Kevin Kühnert':
         
+        
+    
+    
+    
+    
 elif optionpp=='Bündnis90/Die Grünen':
    st.write('You selected the political party:', optionpp + ".")
    optiongruenen = st.selectbox(
