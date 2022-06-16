@@ -35,7 +35,7 @@ if optionpp=='AFD':
    st.write('You selected the political party:', optionpp)
    optionafd = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('Tino Chrupalla', 'Dr. Alice Weidel', 'Beatrix von Storch', 'Norbert Kleinwächter', 'Leif Erik Holm'))
+     ('Tino Chrupalla', 'Dr. Alice Weidel', 'Beatrix von Storch'))
 elif optionpp=='CDU/CSU':
    st.write('You selected the political party:', optionpp)
    optioncducsu = st.selectbox(
@@ -50,16 +50,16 @@ elif optionpp=='Bündnis90/Die Grünen':
    st.write('You selected the political party:', optionpp)
    optiongruenen = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('Renate Künast', 'Annalena Baerbock', 'Katrin Göring-Eckardt', 'Emilia Fester', 'Cem Özdemir'))
+     ('Renate Künast', 'Annalena Baerbock', 'Katrin Göring-Eckardt', 'Cem Özdemir'))
 elif optionpp=='Die Linke':
    st.write('You selected the political party:', optionpp)
    optionlinke = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('Dr. Dietmar Bartsch', 'Dr. Gregor Gysi', 'Susanne Henning-Wellsow', 'Petra Pau', 'Janine Wissler'))
+     ('Dr. Dietmar Bartsch', 'Dr. Gregor Gysi', 'Susanne Henning-Wellsow', 'Janine Wissler'))
 elif optionpp=='FDP':
    st.write('You selected the political party:', optionpp)
    optionfdp = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('Christian Lindner', 'Ulrike Harzer', 'Christian Sauter', 'Dr. Marco Buschmann', 'Volker Wissing'))
+     ('Christian Lindner', 'Dr. Marco Buschmann', 'Volker Wissing'))
 
 
