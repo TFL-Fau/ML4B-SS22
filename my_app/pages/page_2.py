@@ -663,7 +663,7 @@ elif optionpp=='Bündnis90/Die Grünen':
    st.write('You selected the political party:', optionpp + ".")
    optiongruenen = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('- Select -', 'Renate Künast', 'Annalena Baerbock', 'Katrin Göring-Eckardt', 'Cem Özdemir'))
+     ('- Select -', 'Renate Künast', 'Annalena Baerbock', 'Cem Özdemir'))
     
 # Renate Künast
 
