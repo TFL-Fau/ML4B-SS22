@@ -94,7 +94,7 @@ if optionpp=='AFD':
         
         st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
-        st.image("Analytics_Result/spd/weidel/wd11.png", width=800)
+        st.image("Analytics_Result/afd/weidel/wd11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
         st.image("Analytics_Result/afd/weidel/wd12.png", width=800)
         st.image("Analytics_Result/afd/weidel/wd13.png", width=800)
