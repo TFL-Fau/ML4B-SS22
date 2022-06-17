@@ -28,7 +28,7 @@ with col3:
 
 # Heading and Topic
 
-st.write("<h1 style='text-align: center; color: white;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
+st.write("<h1 style='text-align: center;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
 
 st.write("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
 
