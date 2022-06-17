@@ -349,7 +349,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/spahn/js5.png", width=800)
         st.image("Analytics_Result/csucdu/spahn/js6.png", width=800)
         st.write("Show the polarity and subjectivty of tweets over time:")
-        st.image("Analytics_Result/csucdu/spahn/kl7.png", width=800)
+        st.image("Analytics_Result/csucdu/spahn/js7.png", width=800)
         
         st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
