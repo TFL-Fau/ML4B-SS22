@@ -39,7 +39,7 @@ if optionpp=='AFD':
  
 # Alice Weidel
 
-   if optionspd == 'Olaf Scholz':  
+   if optionspd == 'Dr. Alice Weidel':  
         st.write('You selected the politician:', optionspd + ".")
         st.write('Time needed to process data: 03:34,39 min.')
         st.write('Number of tweets: 2227.')
