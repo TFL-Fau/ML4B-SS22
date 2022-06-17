@@ -722,7 +722,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         
         st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
-        st.image("Analytics_Result/linke/bartsch/ku11.png", width=800)
+        st.image("Analytics_Result/gruenen/kunast/ku11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
         st.image("Analytics_Result/gruenen/kunast/ku12.png", width=800)
         st.image("Analytics_Result/gruenen/kunast/ku13.png", width=800)
