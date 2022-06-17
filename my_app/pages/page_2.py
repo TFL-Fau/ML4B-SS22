@@ -1812,7 +1812,7 @@ elif optionpp=='FDP':
    st.write('You selected the political party:', optionpp + ".")
    optionfdp = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('- Select -','Volker Wissing', 'Katja Hessel', 'Dr. Lukas Köhler))
+     ('- Select -','Volker Wissing', 'Katja Hessel', 'Dr. Lukas Köhler'))
 
 # Volker Wissing
 
