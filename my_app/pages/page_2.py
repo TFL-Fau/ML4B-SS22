@@ -812,7 +812,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/baerbock/bb11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
         st.image("Analytics_Result/gruenen/baerbock/bb12.png", width=800)
-        st.write("Not enough data!")
+        st.write("Not enough data for Intertopic Distance Map!")
         st.image("Analytics_Result/gruenen/baerbock/bb14.png", width=800)
         
         st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
