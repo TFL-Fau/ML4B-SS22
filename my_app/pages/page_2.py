@@ -843,7 +843,7 @@ elif optionpp=='Bündnis90/Die Grünen':
 
    if optiongruenen == 'Cem Özdemir':  
         st.write('You selected the politician:', optiongruenen + ".")
-        st.write('Time needed to process data: 45:27,48 min.')
+        st.write('Time needed to process data: 08:41,85 min.')
         st.write('Number of tweets: 5756.')
         st.write(" ")
         st.write(" ")
@@ -888,8 +888,8 @@ elif optionpp=='Bündnis90/Die Grünen':
         
         st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
-        st.image("Analytics_Result/gruenen/kunast/oz8.png", width=800)
-        st.write("Show a list of the most ozdemir words:")
+        st.image("Analytics_Result/gruenen/ozdemir/oz8.png", width=800)
+        st.write("Show a list of the most words:")
         st.image("Analytics_Result/gruenen/ozdemir/oz9.png", width=800)
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/gruenen/ozdemir/oz10.png", width=800)
