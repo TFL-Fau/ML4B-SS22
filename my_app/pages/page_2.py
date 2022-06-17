@@ -45,7 +45,7 @@ if optionpp=='AFD':
         st.write('Number of tweets: 876.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
@@ -65,7 +65,7 @@ if optionpp=='AFD':
         st.write("- Saved cleaned data in new column named textforttb")
         
         st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
-        st.image("Analytics_Result/afd/chrupalla/wd3.png", width=800)
+        st.image("Analytics_Result/afd/chrupalla/ch3.png", width=800)
        
         st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
@@ -132,7 +132,7 @@ if optionpp=='AFD':
         st.write('Number of tweets: 2227.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
@@ -232,7 +232,7 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 4119.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
@@ -319,7 +319,7 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 8376.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
@@ -406,7 +406,7 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 9492.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
@@ -493,7 +493,7 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 30612.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Olaf Scholz Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
         st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
