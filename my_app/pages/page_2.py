@@ -22,8 +22,8 @@ with col3:
 
 # Heading and Topic
 
-st.write("<h1 style='text-align: center; color: white;'>Analysis of Tweets</h1>",unsafe_allow_html=True)
-st.write("<h4 style='text-align: center; color: white;'>Please select a politican from one of the given political parties to show the analytic data.</h4>",unsafe_allow_html=True)
+st.write("<h1 style='text-align: center;'>Analysis of Tweets</h1>",unsafe_allow_html=True)
+st.write("<h4 style='text-align: center;'>Please select a politican from one of the given political parties to show the analytic data.</h4>",unsafe_allow_html=True)
 
 # Selecting political party and politician
 
@@ -45,29 +45,29 @@ if optionpp=='AFD':
         st.write('Number of tweets: 876.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/chrupalla/ch1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/chrupalla/ch2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/chrupalla/ch3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -84,7 +84,7 @@ if optionpp=='AFD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/afd/chrupalla/ch7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/afd/chrupalla/ch8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -92,7 +92,7 @@ if optionpp=='AFD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/afd/chrupalla/ch10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/afd/chrupalla/ch11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -110,7 +110,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/chrupalla/ch16.png", width=800)
         st.image("Analytics_Result/afd/chrupalla/ch17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -132,29 +132,29 @@ if optionpp=='AFD':
         st.write('Number of tweets: 2227.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/weidel/wd1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/weidel/wd2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/weidel/wd3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -171,7 +171,7 @@ if optionpp=='AFD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/afd/weidel/wd7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/afd/weidel/wd8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -179,7 +179,7 @@ if optionpp=='AFD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/afd/weidel/wd10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/afd/weidel/wd11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -187,7 +187,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/weidel/wd13.png", width=800)
         st.image("Analytics_Result/afd/weidel/wd14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -197,7 +197,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/weidel/wd16.png", width=800)
         st.image("Analytics_Result/afd/weidel/wd17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -219,29 +219,29 @@ if optionpp=='AFD':
         st.write('Number of tweets: 7309.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/storch/st1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/storch/st2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/afd/storch/st3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -258,7 +258,7 @@ if optionpp=='AFD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/afd/storch/st7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/afd/storch/st8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -266,7 +266,7 @@ if optionpp=='AFD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/afd/storch/st10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/afd/storch/st11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -274,7 +274,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/storch/st13.png", width=800)
         st.image("Analytics_Result/afd/storch/st14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -284,7 +284,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/storch/st16.png", width=800)
         st.image("Analytics_Result/afd/storch/st17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -312,29 +312,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 1975.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/ludwig/lu1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/ludwig/lu2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/ludwig/lu3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -351,7 +351,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/ludwig/lu7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/ludwig/lu8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -359,7 +359,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/ludwig/lu10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/ludwig/lu11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -367,7 +367,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/ludwig/lu13.png", width=800)
         st.image("Analytics_Result/csucdu/ludwig/lu14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -377,7 +377,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/ludwig/lu16.png", width=800)
         st.image("Analytics_Result/csucdu/ludwig/lu17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -399,29 +399,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 1628.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/scheuer/sc1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/scheuer/sc2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/scheuer/sc3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -438,7 +438,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/scheuer/sc7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/scheuer/sc8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -446,7 +446,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/scheuer/sc10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/scheuer/sc11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -454,7 +454,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/scheuer/sc13.png", width=800)
         st.image("Analytics_Result/csucdu/scheuer/sc14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -464,7 +464,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/scheuer/sc16.png", width=800)
         st.image("Analytics_Result/csucdu/scheuer/sc17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -487,29 +487,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 1196.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/merz/me1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/merz/me2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/merz/me3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -526,7 +526,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/merz/me7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/merz/me8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -534,7 +534,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/merz/me10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/merz/me11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -542,7 +542,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/merz/me13.png", width=800)
         st.image("Analytics_Result/csucdu/merz/me14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -552,7 +552,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/merz/me16.png", width=800)
         st.image("Analytics_Result/csucdu/merz/me17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -574,29 +574,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 4570.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/spahn/js1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/spahn/js2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/spahn/js3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -613,7 +613,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/spahn/js7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/spahn/js8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -621,7 +621,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/spahn/js10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/spahn/js11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -629,7 +629,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/spahn/js13.png", width=800)
         st.image("Analytics_Result/csucdu/spahn/js14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -639,7 +639,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/spahn/js16.png", width=800)
         st.image("Analytics_Result/csucdu/spahn/js17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -662,29 +662,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 13437.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/kloeckner/kl1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/kloeckner/kl2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/kloeckner/kl3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -701,7 +701,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/kloeckner/kl7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/kloeckner/kl8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -709,7 +709,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/kloeckner/kl10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/kloeckner/kl11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -717,7 +717,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/kloeckner/kl13.png", width=800)
         st.image("Analytics_Result/csucdu/kloeckner/kl14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -727,7 +727,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/kloeckner/kl16.png", width=800)
         st.image("Analytics_Result/csucdu/kloeckner/kl17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -749,29 +749,29 @@ elif optionpp=='CDU/CSU':
         st.write('Number of tweets: 7925.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/laschet/la1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/laschet/la2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/csucdu/laschet/la3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -788,7 +788,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/csucdu/laschet/la7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/csucdu/laschet/la8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -796,7 +796,7 @@ elif optionpp=='CDU/CSU':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/csucdu/laschet/la10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/csucdu/laschet/la11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -804,7 +804,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/laschet/la13.png", width=800)
         st.image("Analytics_Result/csucdu/laschet/la14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -814,7 +814,7 @@ elif optionpp=='CDU/CSU':
         st.image("Analytics_Result/csucdu/laschet/la16.png", width=800)
         st.image("Analytics_Result/csucdu/laschet/la17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -843,29 +843,29 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 4119.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/scholz/os1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/scholz/os2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/scholz/os3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -882,7 +882,7 @@ elif optionpp=='SPD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/spd/scholz/os7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/spd/scholz/os8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -890,7 +890,7 @@ elif optionpp=='SPD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/spd/scholz/os10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/spd/scholz/os11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -898,7 +898,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/scholz/os13.png", width=800)
         st.image("Analytics_Result/spd/scholz/os14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -908,7 +908,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/scholz/os16.png", width=800)
         st.image("Analytics_Result/spd/scholz/os17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -930,29 +930,29 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 8376.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/kuehnert/ku1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/kuehnert/ku2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/kuehnert/ku3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -969,7 +969,7 @@ elif optionpp=='SPD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/spd/kuehnert/ku7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/spd/kuehnert/ku8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -977,7 +977,7 @@ elif optionpp=='SPD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/spd/kuehnert/ku10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/spd/kuehnert/ku11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -985,7 +985,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/kuehnert/ku13.png", width=800)
         st.image("Analytics_Result/spd/kuehnert/ku14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -995,7 +995,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/kuehnert/ku16.png", width=800)
         st.image("Analytics_Result/spd/kuehnert/ku17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1017,29 +1017,29 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 9492.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/lauterbach/lb1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/lauterbach/lb2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/lauterbach/lb3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1056,7 +1056,7 @@ elif optionpp=='SPD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/spd/lauterbach/lb7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/spd/lauterbach/lb8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1064,7 +1064,7 @@ elif optionpp=='SPD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/spd/lauterbach/lb10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/spd/lauterbach/lb11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1072,7 +1072,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/lauterbach/lb13.png", width=800)
         st.image("Analytics_Result/spd/lauterbach/lb14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1082,7 +1082,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/lauterbach/lb16.png", width=800)
         st.image("Analytics_Result/spd/lauterbach/lb17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1104,29 +1104,29 @@ elif optionpp=='SPD':
         st.write('Number of tweets: 30612.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/esken/ek1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/esken/ek2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/spd/esken/ek3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1143,7 +1143,7 @@ elif optionpp=='SPD':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/spd/esken/ek7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/spd/esken/ek8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1151,7 +1151,7 @@ elif optionpp=='SPD':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/spd/esken/ek10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/spd/esken/ek11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1159,7 +1159,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/esken/ek13.png", width=800)
         st.image("Analytics_Result/spd/esken/ek14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1169,7 +1169,7 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/esken/ek16.png", width=800)
         st.image("Analytics_Result/spd/esken/ek17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1198,29 +1198,29 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write('Number of tweets: 23368.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/kunast/ku1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/kunast/ku2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/kunast/ku3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1237,7 +1237,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/gruenen/kunast/ku7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/gruenen/kunast/ku8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1245,7 +1245,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/gruenen/kunast/ku10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/gruenen/kunast/ku11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1253,7 +1253,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/kunast/ku13.png", width=800)
         st.image("Analytics_Result/gruenen/kunast/ku14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1263,7 +1263,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/kunast/ku16.png", width=800)
         st.image("Analytics_Result/gruenen/kunast/ku17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1285,29 +1285,29 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write('Number of tweets: 103.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/baerbock/bb1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/baerbock/bb2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/baerbock/bb3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1324,7 +1324,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/gruenen/baerbock/bb7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/gruenen/baerbock/bb8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1332,7 +1332,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/gruenen/baerbock/bb10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/gruenen/baerbock/bb11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1340,7 +1340,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Not enough data for Intertopic Distance Map!")
         st.image("Analytics_Result/gruenen/baerbock/bb14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1350,7 +1350,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/baerbock/bb16.png", width=800)
         st.image("Analytics_Result/gruenen/baerbock/bb17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1372,29 +1372,29 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write('Number of tweets: 5756.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/ozdemir/oz1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/ozdemir/oz2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/gruenen/ozdemir/oz3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1411,7 +1411,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/gruenen/ozdemir/oz7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/gruenen/ozdemir/oz8.png", width=800)
         st.write("Show a list of the most words:")
@@ -1419,7 +1419,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/gruenen/ozdemir/oz10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/gruenen/ozdemir/ku11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1427,7 +1427,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/ozdemir/oz13.png", width=800)
         st.image("Analytics_Result/gruenen/ozdemir/oz14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1437,7 +1437,7 @@ elif optionpp=='Bündnis90/Die Grünen':
         st.image("Analytics_Result/gruenen/ozdemir/oz16.png", width=800)
         st.image("Analytics_Result/gruenen/ozdemir/oz17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1467,29 +1467,29 @@ elif optionpp=='Die Linke':
         st.write('Number of tweets: 5217.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/bartsch/ba1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/bartsch/ba2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/bartsch/ba3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1506,7 +1506,7 @@ elif optionpp=='Die Linke':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/linke/bartsch/ba7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/linke/bartsch/ba8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1514,7 +1514,7 @@ elif optionpp=='Die Linke':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/linke/bartsch/ba10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/linke/bartsch/ba11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1522,7 +1522,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/bartsch/ba13.png", width=800)
         st.image("Analytics_Result/linke/bartsch/ba14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1532,7 +1532,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/bartsch/ba16.png", width=800)
         st.image("Analytics_Result/linke/bartsch/ba17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1554,29 +1554,29 @@ elif optionpp=='Die Linke':
         st.write('Number of tweets: 2102.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/gysi/gi1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/gysi/gi2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/gysi/gi3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1593,7 +1593,7 @@ elif optionpp=='Die Linke':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/linke/gysi/gi7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/linke/gysi/gi8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1601,7 +1601,7 @@ elif optionpp=='Die Linke':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/linke/gysi/gi10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/linke/bartsch/ba11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1609,7 +1609,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/gysi/gi13.png", width=800)
         st.image("Analytics_Result/linke/gysi/gi14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1619,7 +1619,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/gysi/gi16.png", width=800)
         st.image("Analytics_Result/linke/gysi/gi17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1641,29 +1641,29 @@ elif optionpp=='Die Linke':
         st.write('Number of tweets: 3165.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/welsow/we1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/welsow/we2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/welsow/we3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1680,7 +1680,7 @@ elif optionpp=='Die Linke':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/linke/welsow/we7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/linke/welsow/we8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1688,7 +1688,7 @@ elif optionpp=='Die Linke':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/linke/welsow/we10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/linke/welsow/we11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1696,7 +1696,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/welsow/we13.png", width=800)
         st.image("Analytics_Result/linke/welsow/we14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1706,7 +1706,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/welsow/we16.png", width=800)
         st.image("Analytics_Result/linke/welsow/we17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1728,29 +1728,29 @@ elif optionpp=='Die Linke':
         st.write('Number of tweets: 10119.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/wisler/wi1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/wisler/wi2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/linke/wisler/wi3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1767,7 +1767,7 @@ elif optionpp=='Die Linke':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/linke/wisler/wi7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/linke/wisler/wi8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1775,7 +1775,7 @@ elif optionpp=='Die Linke':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/linke/wisler/wi10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/linke/wisler/wi11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1783,7 +1783,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/wisler/wi13.png", width=800)
         st.image("Analytics_Result/linke/wisler/wi14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1793,7 +1793,7 @@ elif optionpp=='Die Linke':
         st.image("Analytics_Result/linke/wisler/wi16.png", width=800)
         st.image("Analytics_Result/linke/wisler/wi17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
@@ -1822,29 +1822,29 @@ elif optionpp=='FDP':
         st.write('Number of tweets: 9534.')
         st.write(" ")
         st.write(" ")
-        st.write("<h3 style='text-align: center; color: white;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/fdp/wissing/wi1.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/fdp/wissing/wi2.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
         st.write("- Saved cleaned data in new column named edited")
         st.write(" ")
         
-        st.write("<h4 style='text-align: center; color: white;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
         st.write("- Removed Mentions, Hashtags, single letters, @ and -")
         st.write("- Saved cleaned data in new column named textforttb")
         
-        st.write("<h4 style='text-align: center; color: white;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
         st.image("Analytics_Result/fdp/wissing/wi3.png", width=800)
        
-        st.write("<h4 style='text-align: center; color: white;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
         st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
         st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
         st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
@@ -1861,7 +1861,7 @@ elif optionpp=='FDP':
         st.write("Show the polarity and subjectivty of tweets over time:")
         st.image("Analytics_Result/fdp/wissing/wi7.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
         st.write("Show the amount of words per tweet:")
         st.image("Analytics_Result/fdp/wissing/wi8.png", width=800)
         st.write("Show a list of the most frequent words:")
@@ -1869,7 +1869,7 @@ elif optionpp=='FDP':
         st.write("Show a list of the most frequent trigram ofwords:")
         st.image("Analytics_Result/fdp/wissing/wi10.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
         st.write("Result of the LDA analysis:")
         st.image("Analytics_Result/fdp/wissing/wi11.png", width=800)
         st.write("Result of the Topic Modelling with Bertopic:")
@@ -1877,7 +1877,7 @@ elif optionpp=='FDP':
         st.image("Analytics_Result/fdp/wissing/wi13.png", width=800)
         st.image("Analytics_Result/fdp/wissing/wi14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -1887,7 +1887,7 @@ elif optionpp=='FDP':
         st.image("Analytics_Result/fdp/wissing/wi16.png", width=800)
         st.image("Analytics_Result/fdp/wissing/wi17.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
         st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
         st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
         st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
