@@ -308,7 +308,7 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Julia Klöckner':  
         st.write('You selected the politician:', optioncducsu + ".")
-        st.write('Time needed to process data: 1:09:56,83 min.')
+        st.write('Time needed to process data: 16:01,74 min.')
         st.write('Number of tweets: 13437.')
         st.write(" ")
         st.write(" ")
