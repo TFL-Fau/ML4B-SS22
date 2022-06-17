@@ -30,22 +30,22 @@ with col3:
 
 st.write("<h1 style='text-align: center;'>Sentiment Analysis of Tweets</h1>",unsafe_allow_html=True)
 
-st.write("<h4 style='text-align: center; color: white;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
+st.write("<h4 style='text-align: center;'>Introducing group 9 with the topic Sentiment Analysis of Tweets! <br> <br></h4>",unsafe_allow_html=True)
 
 # Project Description
 
-st.write("<h3 style='text-align: center; color: white;'>Projectdescription & Team </h3>",unsafe_allow_html=True)
-st.write("<h5 style='text-align: center; color: white;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
+st.write("<h3 style='text-align: center;'>Projectdescription & Team </h3>",unsafe_allow_html=True)
+st.write("<h5 style='text-align: center;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
 row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
 with row1_1:
     st.image("Philip.jpg", width=215)
-    st.write("<p style='text-align: center; color: white;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
+    st.write("<p style='text-align: center;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
 with row1_2:
     st.image("Tobias.jpg", width=200)
-    st.write("<p style='text-align: center; color: white;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
+    st.write("<p style='text-align: center;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
 with row1_3:
     st.image("Thies.png", width=219)
-    st.write("<p front-size= 30px style='text-align: center; color: white;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
+    st.write("<p front-size= 30px style='text-align: center;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
     
 #First Analysis of data from Olaf Scholz to get into the data and generating random Olar Scholz comment
 
@@ -80,7 +80,7 @@ with st.expander("1. Task: Generate random Application", expanded=False):
 with st.expander("2. Task: Analyzing given Data and creating Dataframe", expanded=False):
     # Analyzing given dataset
 
-    st.write("<h4 style='text-align: center; color: white;'>Analysing Dataset for our Dataframe</h4>",unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center;'>Analysing Dataset for our Dataframe</h4>",unsafe_allow_html=True)
     st.write(' ')
     st.write('- Analyzing the given Dataset')
     st.write('- Looking for useful parameters to create a dataset')
@@ -115,7 +115,7 @@ with st.expander("2. Task: Analyzing given Data and creating Dataframe", expande
 
 with st.expander("3. Task: Preprocessing of our Dataframe", expanded=False):
 
-    st.write("<h4 style='text-align: center; color: white;'>Preprocessing of our Dataframe</h4>",unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center;'>Preprocessing of our Dataframe</h4>",unsafe_allow_html=True)
     st.write('- Converted the datetime column with pd.to_datetime to use for diagrams etc.')
     st.write('- Removed Retweets from the dataframe')
     st.write('- Checked the language of the tweets')
@@ -126,7 +126,7 @@ with st.expander("3. Task: Preprocessing of our Dataframe", expanded=False):
 
 with st.expander("4. Task: Goals for the Data Analysis of tweets", expanded=False):
 
-    st.write("<h4 style='text-align: center; color: white;'>Goals for the Data Analysis of tweets</h4>",unsafe_allow_html=True)
+    st.write("<h4 style='text-align: center;'>Goals for the Data Analysis of tweets</h4>",unsafe_allow_html=True)
     st.write('Our Goal: ')
     st.write('- Visualize used words and content in different ways')
     st.write('- Sentiment and Polarity Analysis')
