@@ -41,6 +41,14 @@ if optionpp=='AFD':
 
    if optionafd == 'Tino Chrupalla':  
         st.write('You selected the politician:', optionafd + ".")
+        
+        st.write('•	In the 1990s, Tino Chrupalla joined the Christian Democratic Youth')
+        st.write('•	Chrupalla entered the AfD in 2015')
+        st.write('•	Chrupalla is one of five deputy chief whips of the AfD federal parliamentary group')
+        st.write('•	Ahead of the 2021 German federal election, Chrupalla was the AfDs leading candidate for the Bundestag alongside Alice Weidel')
+        st.write('•	Weidel and Chrupalla are group leaders of the AfD parliamentary group in the Bundestag')
+        st.write(' ')        
+        
         st.write('Time needed to process data: 01:53,40 min.')
         st.write('Number of tweets: 876.')
         st.write(" ")
@@ -100,7 +108,7 @@ if optionpp=='AFD':
         st.image("Analytics_Result/afd/chrupalla/ch13.png", width=800)
         st.image("Analytics_Result/afd/chrupalla/ch14.png", width=800)
         
-        st.write("<h4 style='text-align: center; color: white;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
         st.write("Steps to take to connect tweets with emotions")
         st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
         st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
@@ -128,6 +136,12 @@ if optionpp=='AFD':
 
    if optionafd == 'Dr. Alice Weidel':  
         st.write('You selected the politician:', optionafd + ".")
+        
+        st.write('•	Alice Elisabeth Weidel has been the leader of the AfD in the Bundestag since October 2017')
+        st.write('•	Member of the Bundestag since the 2017 federal election during which she was the AfDs lead candidate together with Alexander Gauland')
+        st.write('•	Since November 2019, she has been the deputy federal spokeswoman for her party and, since February 2020, chairwoman of the AfD state association in Baden-Württemberg')
+        st.write(' ')
+        
         st.write('Time needed to process data: 03:34,39 min.')
         st.write('Number of tweets: 2227.')
         st.write(" ")
@@ -215,6 +229,12 @@ if optionpp=='AFD':
 
    if optionafd == 'Beatrix von Storch':  
         st.write('You selected the politician:', optionafd + ".")
+        
+        st.write('•	Beatrix von Storch has been Deputy Leader of the AfD since July 2015 and Member of the Bundestag since September 2017')
+        st.write('•	She previously was Member of the European Parliament (MEP) from Germany')
+        st.write('•	She belongs ancestrally to the royal House of Oldenburg ')
+        st.write(' ')
+        
         st.write('Time needed to process data: 07:39,84 min.')
         st.write('Number of tweets: 7309.')
         st.write(" ")
@@ -308,6 +328,13 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Daniela Ludwig':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	She was first elected to the Bundestag in 2002')
+        st.write('•	Ludwig was deputy general secretary of the CSU in 2018 – 2019')
+        st.write('•	She was the spokesperson on transport policy for the CDU/CSU group')
+        st.write('•	From 2019 until 2021, Ludwig served as Commissioner on Narcotic Drugs at the Federal Ministry of Health in the government of Chancellor Merkel, succeeding Marlene Mortler')
+        st.write(' ')
+        
         st.write('Time needed to process data: 02:22,02 min.')
         st.write('Number of tweets: 1975.')
         st.write(" ")
@@ -395,6 +422,12 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Andreas Scheuer':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	From 15 December 2013 to 13 March 2018 he was Secretary General of the CSU')
+        st.write('•	From 2009 to 2013, he was Parliamentary Secretary of State in the former Federal Ministry for Transport, Building and Urban Development')
+        st.write('•	He has been a member of the German Bundestag since 2002')
+        st.write(' ')
+        
         st.write('Time needed to process data: 02:23,48 min.')
         st.write('Number of tweets: 1628.')
         st.write(" ")
@@ -483,6 +516,12 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Friedrich Merz':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	Leader of the Christian Democratic Union (CDU) since 31 January 2022 and leader of the Union parliamentary group as well as the Leader of the Opposition in the Bundestag since 15 February 2022')
+        st.write('•	In 2002 gradually withdrew from politics, focusing on his legal career and leaving parliament entirely in 2009, until his return to parliament in 2021 ')
+        st.write('•	In 2004 he became a senior counsel with Mayer Brown, where he has focused on mergers and acquisitions, banking and finance, and compliance. He has served on the boards of numerous companies')
+        st.write(' ')
+        
         st.write('Time needed to process data: 02:36,88 min.')
         st.write('Number of tweets: 1196.')
         st.write(" ")
@@ -570,6 +609,11 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Jens Spahn':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	Federal Minister of Health in the fourth cabinet of Chancellor Angela Merkel from 2018 to 2022')
+        st.write('•	He has been Member oft the Bundestag since 2002')
+        st.write(' ')
+        
         st.write('Time needed to process data: 06:37,95 min.')
         st.write('Number of tweets: 4570.')
         st.write(" ")
@@ -658,6 +702,12 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Julia Klöckner':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	Served as Federal Minister of Food, Agriculture and Consumer Protection from 2018 to 2021')
+        st.write('•	Since 2012, she has also been part of the CDU leadership')
+        st.write('•	Since 2002 Member of the Bundestag')
+        st.write(' ')
+        
         st.write('Time needed to process data: 16:01,74 min.')
         st.write('Number of tweets: 13437.')
         st.write(" ")
@@ -745,6 +795,13 @@ elif optionpp=='CDU/CSU':
 
    if optioncducsu == 'Armin Laschet':  
         st.write('You selected the politician:', optioncducsu + ".")
+        
+        st.write('•	Served as Minister President of North Rhine-Westphalia from 2017 to 2021')
+        st.write('•	Served as Leader of the CDU from 2021 to 2022')
+        st.write('•	Since 26 October 2021 he serves as Member of the German Bundestag and since 24 January 2022 as Vice President of the Parliamentary Assembly of the Council of Europe')
+        st.write('•	Laschet resigned as Minister President of North Rhine-Westphalia in 2021 in order to resume his membership of the Bundestag')
+        st.write(' ')
+        
         st.write('Time needed to process data: 09:37,14 min.')
         st.write('Number of tweets: 7925.')
         st.write(" ")
@@ -839,6 +896,13 @@ elif optionpp=='SPD':
 
    if optionspd == 'Olaf Scholz':  
         st.write('You selected the politician:', optionspd + ".")
+        
+        st.write('•	Serves as the chancellor of Germany since 8 December 2021')
+        st.write('•	He previously served as Vice Chancellor under Angela Merkel and as Federal Minister of Finance from 2018 to 2021')
+        st.write('•	He was also First Mayor of Hamburg from 2011 to 2018 and deputy leader of the SPD from 2009 to 2019')
+        st.write('•	Member of the Bundestag from 1998 to 2011')
+        st.write(' ')
+        
         st.write('Time needed to process data: 04:30,89 min.')
         st.write('Number of tweets: 4119.')
         st.write(" ")
@@ -926,6 +990,12 @@ elif optionpp=='SPD':
 
    if optionspd == 'Kevin Kühnert':  
         st.write('You selected the politician:', optionspd + ".")
+        
+        st.write('•	General Secretary of the SPD')
+        st.write('•	Member of the Bundestag since the 2021')
+        st.write('•	From 24 November 2017 to 8 January 2021 Kühnert was the federal chairman of the Jusos, previously serving as deputy chairman')
+        st.write(' ')
+        
         st.write('Time needed to process data: 07:48,31 min.')
         st.write('Number of tweets: 8376.')
         st.write(" ")
@@ -1013,6 +1083,11 @@ elif optionpp=='SPD':
 
    if optionspd == 'Prof. Dr. Karl Lauterbach':  
         st.write('You selected the politician:', optionspd + ".")
+        
+        st.write('•	Serves as Federal Minister of Health since 8 December 2021')
+        st.write('•	Since the 2005 federal elections, he has been a Member of the Bundestag')
+        st.write(' ')        
+        
         st.write('Time needed to process data: 13:51,63 min.')
         st.write('Number of tweets: 9492.')
         st.write(" ")
@@ -1100,6 +1175,11 @@ elif optionpp=='SPD':
 
    if optionspd == 'Saskia Esken':  
         st.write('You selected the politician:', optionspd + ".")
+        
+        st.write('•	Co-leader of the social demogratic party since being elected in December 2019')
+        st.write('•	She has been a member of the Bundestag since 2013 ')
+        st.write(' ')  
+        
         st.write('Time needed to process data: 1:09:56,83 min.')
         st.write('Number of tweets: 30612.')
         st.write(" ")
@@ -1194,6 +1274,10 @@ elif optionpp=='Bündnis90/Die Grünen':
 
    if optiongruenen == 'Renate Künast':  
         st.write('You selected the politician:', optiongruenen + ".")
+        
+        st.write('•	She was the Minister of Consumer Protection, Food and Agriculture from 2001 to 2005')
+        st.write(' ')
+        
         st.write('Time needed to process data: 45:27,48 min.')
         st.write('Number of tweets: 23368.')
         st.write(" ")
@@ -1281,6 +1365,13 @@ elif optionpp=='Bündnis90/Die Grünen':
 
    if optiongruenen == 'Annalena Baerbock':  
         st.write('You selected the politician:', optiongruenen + ".")
+        
+        st.write('•	Serving as Germanys minister for foreign affairs since 2021')
+        st.write('•	From 2018 to January 2022, Baerbock served as co-leader of Alliance 90/The Greens, alongside Robert Habeck')
+        st.write('•	She was the partys candidate for chancellor in the 2021 ')
+        st.write('•	She was first elected to the Bundestag in 2013')
+        st.write(' ')
+        
         st.write('Time needed to process data: 00:55,87 min.')
         st.write('Number of tweets: 103.')
         st.write(" ")
@@ -1368,6 +1459,13 @@ elif optionpp=='Bündnis90/Die Grünen':
 
    if optiongruenen == 'Cem Özdemir':  
         st.write('You selected the politician:', optiongruenen + ".")
+        
+        st.write('•	Between 2008 and 2018, Özdemir served as co-chair of the Green Party')
+        st.write('•	He has been a Member of the German Bundestag since 2013')
+        st.write('•	He was a Member of the German Bundestag between 1994 and 2002 and of the European Parliament between 2004 and 2009')
+        st.write('•	Since December 2021, he is the minister of Food and Agriculture ')
+        st.write(' ')
+        
         st.write('Time needed to process data: 08:41,85 min.')
         st.write('Number of tweets: 5756.')
         st.write(" ")
@@ -1463,6 +1561,11 @@ elif optionpp=='Die Linke':
 
    if optionlinke == 'Dr. Dietmar Bartsch':  
         st.write('You selected the politician:', optionlinke + ".")
+        
+        st.write('•	Has served as co-chair of The Left parliamentary group in the Bundestag since 2015')
+        st.write('•	He has been a member of the Bundestag since 2005, and previously served from 1998 to 2002')
+        st.write(' ')
+        
         st.write('Time needed to process data: 05:47,88 min.')
         st.write('Number of tweets: 5217.')
         st.write(" ")
@@ -1550,6 +1653,11 @@ elif optionpp=='Die Linke':
 
    if optionlinke == 'Dr. Gregor Gysi':  
         st.write('You selected the politician:', optionlinke + ".")
+        
+        st.write('•	Leading the left parliamentary group from 2005 to 2015')
+        st.write('•	2005 again member oft the Bundestag')
+        st.write(' ')
+        
         st.write('Time needed to process data: 02:45,20 min.')
         st.write('Number of tweets: 2102.')
         st.write(" ")
@@ -1637,6 +1745,12 @@ elif optionpp=='Die Linke':
 
    if optionlinke == 'Susanne Henning-Wellsow':  
         st.write('You selected the politician:', optionlinke + ".")
+        
+        st.write('•	Has been federal co-chairwoman of The Left and member of the Bundestag since 2021')
+        st.write('•	Prior, she served as member of the Landtag of Thuringia since 2004')
+        st.write('•	Leader of the Thuringia branch of The Left since November 2013 and leader of the state parliamentary group since December 2014')
+        st.write(' ')
+        
         st.write('Time needed to process data: 03:36,75 min.')
         st.write('Number of tweets: 3165.')
         st.write(" ")
@@ -1724,6 +1838,11 @@ elif optionpp=='Die Linke':
 
    if optionlinke == 'Janine Wissler':  
         st.write('You selected the politician:', optionlinke + ".")
+        
+        st.write('•	Has been co-chairwoman of The Left and member of the Bundestag since 2021')
+        st.write('•	Prior to that, she served as member of the Landtag of Hesse since 2008 and leader of the state parliamentary group since 2009, including as sole leader since 2014, as well as deputy leader of the federal party since 2014')
+        st.write(' ')
+        
         st.write('Time needed to process data: 10:42,01 min.')
         st.write('Number of tweets: 10119.')
         st.write(" ")
@@ -1818,6 +1937,12 @@ elif optionpp=='FDP':
 
    if optionfdp == 'Volker Wissing':  
         st.write('You selected the politician:', optionfdp + ".")
+        
+        st.write('•	Has been serving as the partys General Secretary since 2020')
+        st.write('•	Minister for Transport in the federal government since 2021')
+        st.write('•	Member of the German Parliament from 2004 to 2013')
+        st.write(' ')
+        
         st.write('Time needed to process data: 09:38,26 min.')
         st.write('Number of tweets: 9534.')
         st.write(" ")
@@ -1905,6 +2030,11 @@ elif optionpp=='FDP':
 
    if optionfdp == 'Katja Hessel':  
         st.write('You selected the politician:', optionfdp + ".")
+        
+        st.write('•	Has been serving as Parliamentary State Secretary in the Federal Ministry of Finance in the coalition government since 2021')
+        st.write('•	She has been serving as a member of the Bundestag since 2017')
+        st.write(' ')
+        
         st.write('Time needed to process data: 01:16,54 min.')
         st.write('Number of tweets: 821.')
         st.write(" ")
@@ -1992,6 +2122,11 @@ elif optionpp=='FDP':
 
    if optionfdp == 'Dr. Lukas Köhler':  
         st.write('You selected the politician:', optionfdp + ".")
+        
+        st.write('•	Has been serving as a member of the Bundestag since 2017')
+        st.write('•	Joined the Young Liberals in 2011.')
+        st.write(' ')
+        
         st.write('Time needed to process data: 02:47,64 min.')
         st.write('Number of tweets: 1617.')
         st.write(" ")
