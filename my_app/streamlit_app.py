@@ -136,5 +136,5 @@ with st.expander("4. Task: Goals for the Data Analysis of tweets", expanded=Fals
     st.write('- Comparison and Contrast of sentiment and emotion analysis')
     st.write(' ')
     st.write('On "page 2" we analyzed the tweets of 5 politicians per political party in the german bundestag 2022.')
-    st.write('All data was processed with an Apple Macbook Pro with a Apple M1 chip.')
+    st.write('All data was processed with an Apple Macbook Pro with an Apple M1 chip.')
           
