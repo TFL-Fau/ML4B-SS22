@@ -20,4 +20,4 @@ with col3:
 
 # Heading and Topic
 
-st.write("<h1 style='text-align: center;'>Tweet Emotion algorithm</h1>",unsafe_allow_html=True)
+st.write("<h1 style='text-align: center;'>Tweet Emotion Algorithm</h1>",unsafe_allow_html=True)
