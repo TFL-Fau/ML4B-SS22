@@ -889,7 +889,7 @@ elif optionpp=='SPD':
    st.write('You selected the political party:', optionpp + ".")
    optionspd = st.selectbox(
      'Following politicans of this party were analyzed. Pick one to see it!',
-     ('- Select -', 'Olaf Scholz', 'Kevin Kühnert',  'Prof. Dr. Karl Lauterbach', 'Saskia Esken'))
+     ('- Select -', 'Olaf Scholz', 'Martin Schulz', 'Kevin Kühnert',  'Prof. Dr. Karl Lauterbach', 'Saskia Esken'))
    # Data of SPD politicians
 
    # Olaf Scholz
@@ -986,6 +986,102 @@ elif optionpp=='SPD':
         st.image("Analytics_Result/spd/scholz/os20.png", width=800)
         st.image("Analytics_Result/spd/scholz/os21.png", width=800)
 
+# Olaf Scholz
+
+   if optionspd == 'Martin Schulz':  
+        st.write('You selected the politician:', optionspd + ".")
+        
+        st.write('•	From 1987 to 1998 Schulz was honorary mayor of Würselen')
+        st.write('•	He was a member of the European Parliament from 1994 to 2017 and its president from 2012 to 2017')
+        st.write('•	Schulz was a member of the federal executive committee and the party presidium of the SPD from 1999 to 2018.')
+        st.write('•	From 2017 to 2018, he served as SPD party chairman')
+        st.write('•	In December 2020, Schulz was elected chairman of the Friedrich Ebert Foundation, which has close ties to the SPD')
+        st.write('Schulz ran as the SPDs candidate for chancellor in the 2017 federal election')
+        st.write(' ')
+        
+        st.write('Time needed to process data: 04:35,93 min.')
+        st.write('Number of tweets: 4119.')
+        st.write(" ")
+        st.write(" ")
+        st.write("<h3 style='text-align: center;'>Twitter Data Analysis</h3>",unsafe_allow_html=True)
+        st.write(" ")
+        
+        st.write("<h4 style='text-align: center;'>1. Overview about the number of tweets over time</h4>",unsafe_allow_html=True)
+        st.image("Analytics_Result/spd/schulz/os1.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>2. Get a first overview over the used words in the tweets.</h4>",unsafe_allow_html=True)
+        st.image("Analytics_Result/spd/schulz/os2.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>3. Cleaning the text of the dataframe for further processing.</h4>",unsafe_allow_html=True)
+        st.write("- Removed Mentions, Hashtags, single letters, @ and -")
+        st.write("- Changed ÄÜÖäüö to AeUeOEaeueoe")
+        st.write("- Saved cleaned data in new column named edited")
+        st.write(" ")
+        
+        st.write("<h4 style='text-align: center;'>4. Cleaning the text for sentiment analysis</h4>",unsafe_allow_html=True)
+        st.write("- Removed Mentions, Hashtags, single letters, @ and -")
+        st.write("- Saved cleaned data in new column named textforttb")
+        
+        st.write("<h4 style='text-align: center;'>5. Show Wordcloud with cleaned text</h4>",unsafe_allow_html=True)
+        st.image("Analytics_Result/spd/schulz/os3.png", width=800)
+       
+        st.write("<h4 style='text-align: center;'>6. Sentiment Analysis with TextBlob</h4>",unsafe_allow_html=True)
+        st.write("- Get the Subjectivity for each tweet: Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information. 0 means low personal opinion and 1 a lot of personal opinion.") 
+        st.write("- Save Subjectivity in new column named Personal Opinion (Subjectivity)")
+        st.write("- Get the Polarity for each tweet: Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment")
+        st.write("- Save Polarity in new column named Sentiment (Polarity)")
+        st.write("Create new column named Analysis where an Intepration of the the Polarity is saved.")
+        st.write("- A score below -0.15 is considered as a negative tweet")
+        st.write("- A score between -0.15 and 0.15 is considered as a neutral tweet")
+        st.write("- A score above 0.15 is considered as a positive tweet")
+        st.write("Show a Scatterplot for both results:")
+        st.image("Analytics_Result/spd/schulz/os4.png", width=800)
+        st.write("Show the percentage of each polarity as numbers and diagram:")
+        st.image("Analytics_Result/spd/schulz/os5.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os6.png", width=800)
+        st.write("Show the polarity and subjectivty of tweets over time:")
+        st.image("Analytics_Result/spd/schulz/os7.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>8. Word related analysis</h4>",unsafe_allow_html=True)
+        st.write("Show the amount of words per tweet:")
+        st.image("Analytics_Result/spd/schulz/os8.png", width=800)
+        st.write("Show a list of the most frequent words:")
+        st.image("Analytics_Result/spd/schulz/os9.png", width=800)
+        st.write("Show a list of the most frequent trigram ofwords:")
+        st.image("Analytics_Result/spd/schulz/os10.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>9. Topic Analysis with LDA and Bertopic</h4>",unsafe_allow_html=True)
+        st.write("Result of the LDA analysis:")
+        st.image("Analytics_Result/spd/schulz/os11.png", width=800)
+        st.write("Result of the Topic Modelling with Bertopic:")
+        st.image("Analytics_Result/spd/schulz/os12.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os13.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os14.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>10. Emotion Analysis</h4>",unsafe_allow_html=True)
+        st.write("Steps to take to connect tweets with emotions")
+        st.write("1. Create a list of words were the emotion of each is entered as a 0 or 1")
+        st.write("2. Go threw every tweets and count the the times a word of each emotion appears")
+        st.write("3. Save in a new column for each emotion the number of times the emotion appears in the tweet")
+        st.write("Show the top 15 words for every emotion: ")
+        st.image("Analytics_Result/spd/schulz/os15.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os16.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os17.png", width=800)
+        
+        st.write("<h4 style='text-align: center;'>11. Connect Sentiment and Emotion Analysis for Comparison</h4>",unsafe_allow_html=True)
+        st.write("Declare Freude, Vorfreude, Vertrauen and Überraschung as positive emotions.")
+        st.write("Declare Traurigkeit, Furcht, Ekel and Wut as negative emotions.")
+        st.write("Count the total number of times a negative or positive emotion accurs in a tweet and save the number in two extra columns.")
+        st.write("Go threw each tweet and safe in a new column if there are more then 0 total negative or positive emotions.")
+        st.write(" ")
+        st.write("Shows the percentage of tweets with certain sentiment and if the tweet has a negative emotion:")
+        st.image("Analytics_Result/spd/schulz/os18.png", width=800)
+        st.write("Shows the percentage of tweets with certain sentiment and if the tweet has a positive emotion:")
+        st.image("Analytics_Result/spd/schulz/os19.png", width=800)
+        st.write("Show the percentage of tweets which share the emotion and sentiment:")
+        st.image("Analytics_Result/spd/schulz/os20.png", width=800)
+        st.image("Analytics_Result/spd/schulz/os21.png", width=800)        
+        
 # Kevin Kuehnert
 
    if optionspd == 'Kevin Kühnert':  
