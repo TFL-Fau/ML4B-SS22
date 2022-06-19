@@ -2,4 +2,4 @@ jsonlines
 pandas
 joblib
 nltk
-pickle
+pickle-mixin
