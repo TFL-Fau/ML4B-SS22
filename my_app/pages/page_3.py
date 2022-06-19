@@ -66,9 +66,24 @@ st.write("- NB: GaussianNB")
 st.write("- SVM: Support Vector Machines")
 st.write("- DTR: DecisionTreeRegressor")
 
-st.write("This our our result comparing the predicitions for the emotion Anger (Wut):")
+st.write("This is our result comparing the predicitions for the emotion Anger (Wut):")
 st.image("Algo_Result/comparison.png", width=800)
+st.write("The boxplot is useful to shows the most important robust position and dispersion measures.")
+st.write("- The orange line is the median")
+st.write("- The box shows the higher and lower quartile")
+st.write("- The blackline on the bottom and the topic shows the maximum and minimum")
+st.write(" ")
+st.write("Result of Comparison: The DecisionTreeClassifier algorithm gives us the best predicitions with the highest median score, highest minimum and highest maximum!")
 
+st.write("<h4 style='text-align: center;'>5. Further possible Investigations</h4>",unsafe_allow_html=True)
+
+st.write("- Train the model with the identified best Machine Learning Algorithm")
+st.write("- Train the model with a higher number of tweets")
+
+st.write("<h4 style='text-align: center;'>6. Important to Know</h4>",unsafe_allow_html=True)
+
+st.write("- Of course, the results depend on what words the author of the trained tweets uses")
+st.write("- A higher number of tweets trained give better predicition scores")
 
 
 
