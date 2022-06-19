@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import pickle
 
 st.set_page_config(page_icon="🕊️", page_title="German Twitter Analysis")
 
@@ -136,6 +137,8 @@ vd = pd.read_csv("vectorizedDataframesmall")
 
 vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
-loaded_model = joblib.load('emotionmodel.sav') 
+#loaded_model = joblib.load('emotionmodel.sav') 
+
+loaded_model = pickle.load(open(emotionmodel.sav, 'rb'))
 
 interpretOwnSentence(sentence, loaded_model, vd)

@@ -2,3 +2,4 @@ jsonlines
 pandas
 joblib
 nltk
+pickle5
