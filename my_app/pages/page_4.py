@@ -111,7 +111,7 @@ def interpretOwnSentence(sentence, dicOfModels, df):
     listOfIndex.extend(["textInput","editedInput","WutInput"])
     #print("----\nInput Sentence was transformed to this vector: \n" +str(dfOfSentence.head()))
     keys = list(df.keys()[12:20])
-    #Applying different Models to sentence
+    #Applying different Models to sentences
     keyOfFeatures = dfOfSentence.keys()[24:]
     features = dfOfSentence[keyOfFeatures]    
     iterator = 0
@@ -137,6 +137,6 @@ vd = pd.read_csv("vectorizedDataframesmall")
 
 vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
-loaded_model = joblib.load('emotionmodel.sav') 
+loaded_model = joblib.load('my_app/pages/emotionmodel.sav') 
 
 interpretOwnSentence(sentence, loaded_model, vd)
