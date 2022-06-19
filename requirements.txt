@@ -4,4 +4,4 @@ joblib
 nltk
 re
 pickle-mixin
-sklearn
+scikit-learn
