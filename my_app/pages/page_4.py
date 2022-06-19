@@ -138,8 +138,8 @@ vd = pd.read_csv("vectorizedDataframesmall")
 vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
 filename = 'finalized_model.sav'
-loaded_model = joblib.load(filename) 
+#loaded_model = joblib.load(filename) 
 
-#loaded_model = pickle.load(open(filename, 'rb'))
+loaded_model = pickle.load(open(filename, 'rb'))
 
 interpretOwnSentence(sentence, loaded_model, vd)
