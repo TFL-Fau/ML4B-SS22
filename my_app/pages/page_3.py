@@ -54,6 +54,33 @@ st.image("Algo_Result/r6.png", width=800)
 st.image("Algo_Result/r7.png", width=800)
 st.image("Algo_Result/r8.png", width=800)
 
+st.write("<h4 style='text-align: center;'>4. Comparing different Machine Learning Algorithms for our case</h4>",unsafe_allow_html=True)
+
+st.write("We also compared the results of 7 different Machine Learning Methods to find out which is best for our use case.")
+st.write("We used: ")
+st.write("- LR: LogisticRegression")
+st.write("- LDA: LinearDiscriminantAnalysis")
+st.write("- KNN: KNeighborsClassifier")
+st.write("- CART: DecisionTreeClassifier")
+st.write("- NB: GaussianNB")
+st.write("- SVM: Support Vector Machines")
+st.write("- DTR: DecisionTreeRegressor")
+
+st.write("This our our result comparing the predicitions for the emotion Anger (Wut):")
+st.image("Algo_Result/comparison.png", width=800)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
