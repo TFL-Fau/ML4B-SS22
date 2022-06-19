@@ -34,9 +34,13 @@ st.write("More tweets for training were not possible because of our Prozessor an
 st.image("Algo_Result/algotraining.png", width=800)
 
 st.write("<h1 style='text-align: center;'>2. Showing our results</h1>",unsafe_allow_html=True)
-st.write("In the following you can see the Confusion Matrix, Accuracy, Precision, Recall and f1-Score for every emotion trained:")
-st.write("Explanation: ")
+st.write("In the following you can see the Mean Absolute Error, Confusion Matrix, Accuracy, Precision, Recall and f1-Score for every emotion trained:")
+st.write("Explanations: ")
+st.write("- Mean Absolute Error: Mean Absolute Error (MAE) is calculated by taking the summation of the absolute difference between the actual and calculated values of each observation over the entire array and then dividing the sum obtained by the number of observations in the array")
 st.write("- Accuracy: Accuracy means the state of being correct or precise, (TP+TN) / (TP + TN + FP + FN)")
-st.write("- Precision: Overall performance of model, (TP+TN) / (TP + TN + FP + FN)")
+st.write("- Precision: Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances, (TP+TN) / (TP + TN + FP + FN)")
+st.write("- Recall: Recall (also known as sensitivity) is the fraction of relevant instances that were retrieved, TP/(TP+FP)")
+st.write("- F1-Score: A measure that combines precision and recall is the harmonic mean of Precision and Recall, (2 * TP) / (2 * TP + FP + FN)")
+
 
 
