@@ -137,6 +137,6 @@ vd = pd.read_csv("vectorizedDataframesmall")
 
 vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
-loaded_model = joblib.load('my_app/pages/emotionmodel.sav') 
+loaded_model = joblib.load('emotionmodel') 
 
 interpretOwnSentence(sentence, loaded_model, vd)
