@@ -5,7 +5,7 @@ import jsonlines
 import random
 import pandas as pd
 import joblib
-import sklearn
+
 from PIL import Image
 
 #Group Introduction Code
