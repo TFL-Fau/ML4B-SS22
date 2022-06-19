@@ -1,3 +1,4 @@
 jsonlines
 pandas
 joblib
+nltk
