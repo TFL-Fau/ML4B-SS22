@@ -49,9 +49,9 @@ def clean(text):
 import nltk
 from nltk.stem import PorterStemmer
 porter = PorterStemmer()
-st = nltk.PorterStemmer()
+sp = nltk.PorterStemmer()
 def stemming_on_text(data):
-    text = [st.stem(word) for word in data]
+    text = [sp.stem(word) for word in data]
     return data
 
 def sentence_toVec(sentence,goalDF):
@@ -86,6 +86,12 @@ def sentence_toVec(sentence,goalDF):
             emptyDF[word][0] = 1
     emptyDF.fillna(0)
     return emptyDF
+
+def getAttributesOfTweet(tweetNumber, df):
+    keys = list(df.keys()[12:20])
+    st.write("---\nTweet \n--- \n" + df["textInput"][tweetNumber]+"\n--- \nhas these Emotions according to DataInput Tweet:")
+    for emotion in df[keys]:
+        st.write(str(emotion[:-5]) + "-Value: " +str(df[emotion][tweetNumber]))
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(type(sentence) != str):
@@ -127,16 +133,10 @@ def interpretOwnSentence(sentence, dicOfModels, df):
 
 
 vd = pd.read_csv("vectorizedDataframesmall")
+
+
+vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
+
 loaded_model = joblib.load('emotionmodel.sav') 
 
 interpretOwnSentence(sentence, loaded_model, vd)
-
-
-
-
-
-
-
-
-
-
