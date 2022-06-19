@@ -139,6 +139,8 @@ vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
 #loaded_model = joblib.load('emotionmodel.sav') 
 
-loaded_model = pickle.load(open(emotionmodel.sav, 'rb'))
+filename = 'finalized_model.sav'
+
+loaded_model = pickle.load(open(filename, 'rb'))
 
 interpretOwnSentence(sentence, loaded_model, vd)
