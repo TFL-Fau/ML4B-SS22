@@ -1,8 +1,8 @@
 jsonlines
 pandas
-joblib
 nltk
 re
 pickle-mixin
-scikit-learn
 sklearn
+joblib==0.16.0
+scikit-learn
