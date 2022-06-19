@@ -3,4 +3,4 @@ pandas
 joblib
 nltk
 re
-pickle5
+pickle
