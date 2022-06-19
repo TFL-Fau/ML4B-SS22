@@ -1,7 +1,6 @@
 jsonlines
 pandas
 nltk
-re
 pickle-mixin
 sklearn
 joblib==0.16.0
