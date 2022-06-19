@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-#import joblib
+import joblib
 
 st.set_page_config(page_icon="🕊️", page_title="German Twitter Analysis")
 
