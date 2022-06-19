@@ -26,7 +26,66 @@ sentence = st.text_input('Please enter a sentence to analyse it on emotions:', '
 st.write('Your entered sentence is: ', sentence)
 
 
+
 # Code for analysis
+
+import re
+
+def clean(text):
+    text = re.sub(r'@[A-Za-z0-9]+\s?', '', text) #Removed Mentions
+    text = re.sub(r'#', '', text) #Removed #
+    text = re.sub(r'(.)1+', r'1', text) #cleaned single letters
+    text = re.sub('((www.[^s]+)|(https?://[^s]+))','',text) #Removes links
+    text = re.sub('@','',text) #Remove @
+    text = re.sub('-','',text) #Remove -
+    text = re.sub('ä','ae',text) #Remove ä
+    text = re.sub('Ä','Ae',text) #Remove Ä
+    text = re.sub('ö','oe',text) #Remove Ä
+    text = re.sub('Ö','Oe',text) #Remove Ä
+    text = re.sub('ü','ue',text) #Remove Ä
+    text = re.sub('Ü','Ue',text) #Remove Ä
+    return text
+
+import nltk
+from nltk.stem import PorterStemmer
+porter = PorterStemmer()
+st = nltk.PorterStemmer()
+def stemming_on_text(data):
+    text = [st.stem(word) for word in data]
+    return data
+
+def sentence_toVec(sentence,goalDF):
+    #Preparing Input text
+    cleanSentence = sentence.lower()
+    cleanSentence = clean(cleanSentence)
+    cleansentene = stemming_on_text(cleanSentence)
+    
+    #Preparing EmptyDF
+    emptyList = [0]*len(goalDF.keys())
+    #print(emptyList)
+    #print("Len EmptyList: " + str(len(emptyList)))
+    #emptyDF = goalDF.iloc[0:0].copy()
+    #emptyDF = emptyDF.append(emptyList)
+    #emptyDF = emptyDF.append(pd.DataFrame(emptyList, columns = goalDF.keys()), ignore_index = True)
+    emptyDF = pd.DataFrame(columns = goalDF.keys())
+    #emptyDF.append(pd.Series(), ignore_index = True)
+    emptyDF.loc[len(emptyDF)] = emptyList
+    #print(emptyDF)
+    #emptyDF = pd.DataFrame(emptyList, columns = goalDF.keys())
+    #print("LenEmpty DF: " + str(len(emptyDF)) + " Len Keys Empty DF: " + str(len(emptyDF.keys())))
+    
+    emptyDF["textInput"][0] = sentence
+    emptyDF["editedInput"][0] = cleanSentence
+    #keys = list(emptyDF.keys()[0:10])
+    #print("---")
+    #print("New LenEmpty DF: " + str(len(emptyDF)) + " Len Keys Empty DF: " + str(len(emptyDF.keys())))
+    #print(emptyDF["textInput"].tolist())
+    listOfWords = cleanSentence.split()
+    for word in listOfWords:
+        if word in emptyDF.columns:
+            emptyDF[word][0] = 1
+    emptyDF.fillna(0)
+    return emptyDF
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(type(sentence) != str):
