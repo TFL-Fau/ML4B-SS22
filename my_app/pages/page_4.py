@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 #import pickle
-import sklearn
 
 
 st.set_page_config(page_icon="🕊️", page_title="German Twitter Analysis")
@@ -41,6 +40,7 @@ def clean(text):
     text = re.sub('((www.[^s]+)|(https?://[^s]+))','',text) #Removes links
     text = re.sub('@','',text) #Remove @
     text = re.sub('-','',text) #Remove -
+    text = re.sub(r'[^\w\s]', '', text) # Remove punctations
     text = re.sub('ä','ae',text) #Remove ä
     text = re.sub('Ä','Ae',text) #Remove Ä
     text = re.sub('ö','oe',text) #Remove Ä
