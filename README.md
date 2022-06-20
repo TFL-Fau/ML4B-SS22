@@ -12,7 +12,7 @@
 <a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main/my_app/streamlit_app.py"> Streamlit App </a>
  
 ### Find us on LinkedIn for questions
-<a href = "https://www.linkedin.com/in/tobias-fleming/">Tobias Fleming</a>
+<a href = "https://www.linkedin.com/in/tobias-fleming/">Tobias Fleming, </a>
 <a href = "https://www.linkedin.com/in/philip-maron-655209199/">Philip Maron</a>
 
 ### Explanation of the functionality
