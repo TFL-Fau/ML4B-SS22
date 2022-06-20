@@ -135,11 +135,11 @@ def interpretOwnSentence(sentence, dicOfModels, df):
     getAttributesOfTweet(0,dfOfSentence)
 
 
-vd = pd.read_csv("vectorizedDataframesmall")
+vd = pd.read_csv("my_app/vectorizedDataframesmall")
 
 vd.drop(["Unnamed: 0"],axis = 1, inplace = True)
 
-filename = 'finalized_model.sav'
+filename = 'my_app/finalized_model.sav'
 loaded_model = joblib.load(filename) 
 
 #loaded_model = pickle.load(open(filename, 'rb'))
