@@ -17,7 +17,7 @@ with col1:
 
 with col2:
     
-    st.image("twitter.png", width=100)
+    st.image("my_app/twitter.png", width=100)
 
 with col3:
     st.write(' ')
