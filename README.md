@@ -63,11 +63,13 @@ https://www.mdpi.com/2076-3417/12/8/3709
 
 
 
-### Links we used and we thank th authors for 
+### Links we used and we thank the authors for their amazing work!
   
-
+https://github.com/ccatalao/covid19vaccine-emotions/blob/master/olstorm.ipynb
+https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-latent-dirichlet-allocation-437c81220158
+https://medium.com/swlh/tweet-sentiment-analysis-using-python-for-complete-beginners-4aeb4456040
+https://dibyendudeb.com/comparing-machine-learning-algorithms/
 
 ### Further Information
 Link to a README File as example: <a href = "https://github.com/facebookresearch/xformers/blob/main/README.md">Git Repo</a>
-### Further Thoughts
 </div>
