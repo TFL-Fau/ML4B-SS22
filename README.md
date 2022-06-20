@@ -7,21 +7,25 @@
 
 <div>
 
-### Getting Started
+### Link to our Streamlit App
 
-### Installation
-</div>
+<a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main/my_app/streamlit_app.py"> Streamlit App </a>
+ 
+### Find us on LinkedIn for questions
+<a href = "https://www.linkedin.com/in/tobias-fleming/">Tobias Fleming</a>
+<a href = "https://www.linkedin.com/in/philip-maron-655209199/">Philip Maron</a>
 
-<div>
-
-## Link to the Streamlit Version<br>
-<a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main"> Streamlit App </a><br>
 ### Explanation of the functionality
 </div>
-
+We analyzed the tweets of many of politicians of the german bundestag and shared the results on our streamlit app.
+We analyzed the tweets on their sentiments, emotions and did a topic analysis.
+We trained a machine learning algorithm on the emotion analysis data. If we give the algorithm a sentence he will predict the emotions in it.
+Afterwards we made a comparison between 6 algorithms, to check where we can get the best results.
 <div>
 
 ## Background Information
+
+This projects was the result of an university project at the Friedrich-Alexander-University Erlangen-Nürnberg of the module "Machine Learning: Advanced Concepts" by Martin Enders, Annika Schreiner and Markus Schmitz.
 
 ### Literature
 * Review of Approaches: https://ieeexplore.ieee.org/abstract/document/9396915?casa_token=Yb1qYCssoIgAAAAA:VGRmm3w-y9Bam56m7eSN6jdW3_jp8uuPAsbEA5_QEs2__5gmqIpG05xg1aJrivexpHJPGAKHttr0
@@ -59,9 +63,9 @@ https://www.mdpi.com/2076-3417/12/8/3709
 
 
 
-### Links
+### Links we used and we thank th authors for 
+  
 
-### Ideas
 
 ### Further Information
 Link to a README File as example: <a href = "https://github.com/facebookresearch/xformers/blob/main/README.md">Git Repo</a>
