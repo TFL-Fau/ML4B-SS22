@@ -22,7 +22,7 @@ with col1:
 
 with col2:
     
-    st.image("twitter.png", width=100)
+    st.image("my_app/twitter.png", width=100)
 
 with col3:
     st.write(' ')
@@ -39,13 +39,13 @@ st.write("<h3 style='text-align: center;'>Projectdescription & Team </h3>",unsaf
 st.write("<h5 style='text-align: center;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
 row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
 with row1_1:
-    st.image("Philip.jpg", width=215)
+    st.image("my_app/Philip.jpg", width=215)
     st.write("<p style='text-align: center;'>Philip Maron <br> <br>  Eighth semester Business Informatics </p>",unsafe_allow_html=True)
 with row1_2:
-    st.image("Tobias.jpg", width=200)
+    st.image("my_app/Tobias.jpg", width=200)
     st.write("<p style='text-align: center;'>Tobias Fleming <br> <br> Sixth semester Business Informatics </p>",unsafe_allow_html=True)
 with row1_3:
-    st.image("Thies.png", width=219)
+    st.image("my_app/Thies.png", width=219)
     st.write("<p front-size= 30px style='text-align: center;'>Thies Freudenthal<br> <br>Sixth semester Business Informatics </p>",unsafe_allow_html=True)
     
 #First Analysis of data from Olaf Scholz to get into the data and generating random Olar Scholz comment
