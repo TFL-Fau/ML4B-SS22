@@ -55,7 +55,7 @@ with st.expander("1. Task: Generate random Application", expanded=False):
     result=st.button("Generate random Olaf Scholz comment", disabled=False)
     #st.write(result)
 
-    file="OlafScholz.jl"
+    file="my_app/OlafScholz.jl"
 
     texts = []
     dates = []
