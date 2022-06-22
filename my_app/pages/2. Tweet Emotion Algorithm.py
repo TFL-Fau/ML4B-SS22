@@ -75,10 +75,22 @@ st.write("- The blackline on the bottom and the topic shows the maximum and mini
 st.write(" ")
 st.write("Result of Comparison: The DecisionTreeClassifier algorithm gives us the best predicitions with the highest median score, highest minimum and highest maximum!")
 
-st.write("<h4 style='text-align: center;'>5. Further possible Investigations</h4>",unsafe_allow_html=True)
+st.write("<h4 style='text-align: center;'>5. Limitations and Further possible Research</h4>",unsafe_allow_html=True)
 
-st.write("- Train the model with the identified best Machine Learning Algorithm")
-st.write("- Train the model with a higher number of tweets")
+st.write("Limitations: ")
+st.write("- The Training data was automatically flagged for emotions with the help of a emotion word list. As a result of this, words have not been put into relation to other words in the same sentence. This results in the training data not being as precise as it would be, if text was flagged by hand.")
+st.write("- This Model was trained on a Limited amount of Tweets and vocabulary of certain politicians. This leads to the Model being limited in the vocabulary and the context that the politician used the tweets in.")
+st.write("- As a further result of being trained on a limited amount of Tweets, certain words might have been used in a limited amount of context. An example for this is herzlichen which normaly would be associated positively, but is flagged as Freude, Traurig, Vertrauen. This can result in certain posts having the emotion Sadness, although its a positive tweet")
+st.write("- Comparison of differen ML-Models is on a very limited Dataset of 1000 tweets due to lack of computation power. This results in the quality of the different model maybe varying when having a different size of data set.")
+st.write("- This results in the Model best being used to analyse the tweet of the politician that the model was trained on. That offers a higher chance of the politician using the same vocabulary in a similiar context.")
+
+st.write("Further possible Research:")
+
+st.write("- Improving the initial emotion recognition input for higher quality / more precise training dataset")
+st.write("- Add further politicians for higher veriety and more data")
+st.write("- Training a model on normal sentences, to increase the vocabulary and context to allow higher quality of emotion recognition on normal text instead of the specialized format of tweets.")
+st.write("- Training the model on bigger tweet dataset than 5000 Tweets")
+st.write("- Test if CART Model is realy the supperior ML-Model on a bigger Dataset than the currently implemented DTR Model")
 
 st.write("<h4 style='text-align: center;'>6. Important to Know</h4>",unsafe_allow_html=True)
 
