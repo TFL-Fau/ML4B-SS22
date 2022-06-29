@@ -50,9 +50,9 @@ with row1_3:
     
 #First Analysis of data from Olaf Scholz to get into the data and generating random Olar Scholz comment
 
-with st.expander("1. Task: Generate random Application", expanded=False):
+with st.expander("1. Task: Get random Olaf Scholz comment from dataset", expanded=False):
     st.write(' ')
-    result=st.button("Generate random Olaf Scholz comment", disabled=False)
+    result=st.button("Get your Olaf Scholz comment from dataset", disabled=False)
     #st.write(result)
 
     file="my_app/OlafScholz.jl"
@@ -135,6 +135,8 @@ with st.expander("4. Task: Goals for the Data Analysis of tweets", expanded=Fals
     st.write('- Topic Modeling')
     st.write('- Emotion Analysis')
     st.write('- Comparison and Contrast of sentiment and emotion analysis')
+    st.write('- Creating an algorithm for detecting emotions in a tweet')
+    st.write('- Compare different machine learning algorithms in performance')
     st.write(' ')
     st.write('On the page "Analysis of Tweets" we analyzed the tweets of many politicians from every political party in the german bundestag 2022.')
     st.write('All data was processed with an Apple Macbook Pro with an Apple M1 chip with 16gb RAM.')
