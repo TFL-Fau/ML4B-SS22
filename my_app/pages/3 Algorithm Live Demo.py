@@ -24,6 +24,8 @@ with col3:
 
 # Heading and Topic
 
+st.write("<h1 style='text-align: center;'>Algorithm Live Demo</h1>",unsafe_allow_html=True)
+
 with st.expander("Before you start...", expanded=False):
 
     st.write("<h4 style='text-align: center;'>Introduction to Live Demo:</h4>",unsafe_allow_html=True)
