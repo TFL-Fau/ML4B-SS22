@@ -22,7 +22,7 @@ with col3:
 
 st.write("<h1 style='text-align: center;'>Tweet Emotion Algorithm</h1>",unsafe_allow_html=True)
 
-st.write("<h3 style='text-align: center;'>1. Training our algorithm.</h3>",unsafe_allow_html=True)
+st.write("<h3 style='text-align: center;'>Objective</h3>",unsafe_allow_html=True)
 
 st.write("To accomplish an algorithm that is able to detect emotions in tweets, we used a Decision Tree Regressor algorithm. This algorithm got trained on the basis of our data understanding during 'analysis of tweets' where already existing tweets were judged on their emotional context. With the help of CountVectorisation each tweet was discected and was given to the algorithm as training data, with the goal of recognizing individual emotions within the sentence. Due to processing limitation the model was only trained on 5000 tweets of Saskia Esken, which leads to limitiations for emotion recognition, due to limited amount of vocabulary and diversity. This trainingset needs to be extended in future research with more processing power.")
 
