@@ -130,16 +130,16 @@ def getAttributesOfTweet(tweetNumber, df):
             stringOfNotEmotion = stringOfNotEmotion + emotionText
             countEmotionsPassive = countEmotionsPassive + 1
     if(countEmotionsActive > 1):
-        st.write("The algorithm determined the emotions <u>" + stringOfEmotion + "</u> in the tweet based on the training.",unsafe_allow_html=True)
+        st.write("The algorithm determined the emotions <u><b>" + stringOfEmotion + "</b></u> in the tweet based on the training.",unsafe_allow_html=True)
     elif(countEmotionsActive == 1):
-        st.markdown("The algorithm determined the emotion __**" + stringOfEmotion +"**__  in the tweet based on the training.")
+        st.write("The algorithm determined the emotion <u><b>" + stringOfEmotion +"</b></u>  in the tweet based on the training.",unsafe_allow_html=True)
     else:
         st.markdown("The algorithm did not detect any emotions in the tweet based on the training.")
     
     if(countEmotionsPassive > 1):
-        st.markdown("Thus, the emotions __**" + stringOfNotEmotion+ "**__ according to the algorithm, are not included in the tweet.")
+        st.write("Thus, the emotions <u><b>" + stringOfNotEmotion+ "</b></u> according to the algorithm, are not included in the tweet.",unsafe_allow_html=True)
     elif(countEmotionsPassive == 1):     
-        st.markdown("Thus, the emotion __**" + stringOfNotEmotion+ "**__ according to the algorithm, is not included in the tweet.")
+        st.write("Thus, the emotion <u><b>" + stringOfNotEmotion+ "</b></u> according to the algorithm, is not included in the tweet.",unsafe_allow_html=True)
     else:
         st.markdown("As a result, all emotions known to the algorithm are included in the tweet.")
 
