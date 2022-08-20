@@ -1,0 +1,6 @@
+jsonlines
+pandas
+joblib
+nltk
+re
+pickle-mixin
