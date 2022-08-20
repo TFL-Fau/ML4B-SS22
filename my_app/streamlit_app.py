@@ -118,7 +118,7 @@ with st.expander("3. Task: Preprocessing of our Dataframe", expanded=False):
 
     st.write("<h4 style='text-align: center;'>Preprocessing of our Dataframe</h4>",unsafe_allow_html=True)
     st.write('- Converted the datetime column with pd.to_datetime to use for diagrams etc.')
-    st.write('- Removed Retweets from the dataframe')
+    st.write('- Removed retweets from the dataframe')
     st.write('- Checked the language of the tweets')
     st.write('- Added the language of the tweet in a new column')
     st.write('- Removed the non german tweets')
