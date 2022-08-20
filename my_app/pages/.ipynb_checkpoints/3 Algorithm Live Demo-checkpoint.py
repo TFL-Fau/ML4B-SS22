@@ -107,7 +107,7 @@ def sentence_toVec(sentence,goalDF):
 
 def getAttributesOfTweet(tweetNumber, df):
     keys = list(df.keys()[12:20])
-    st.write("---\nTweet \n--- \n" + df["textInput"][tweetNumber]+"\n---")
+    print("---\nTweet \n--- \n" + df["textInput"][tweetNumber]+"\n---")
     stringOfEmotion = ""
     stringOfNotEmotion = ""
     countEmotionsActive = 0
@@ -128,28 +128,28 @@ def getAttributesOfTweet(tweetNumber, df):
             countEmotionsPassive = countEmotionsPassive + 1
     
     if(countEmotionsActive > 1):
-        st.write("Der Algorithmus hat anhand des Trainings die Emotionen " + stringOfEmotion +" im Tweet ermittelt.")
+        print("Der Algorithmus hat anhand des Trainings die Emotionen " + stringOfEmotion +" im Tweet ermittelt.")
     elif(countEmotionsActive == 1):
-        st.write("Der Algorithmus hat anhand des Trainings die Emotion " + stringOfEmotion +" im Tweet ermittelt.")
+        print("Der Algorithmus hat anhand des Trainings die Emotion " + stringOfEmotion +" im Tweet ermittelt.")
     else:
-        st.write("Der Algorithmus hat anhand des Trainings keine Emotionen im Tweet ermittelt.")
+        print("Der Algorithmus hat anhand des Trainings keine Emotionen im Tweet ermittelt.")
     
     if(countEmotionsPassive > 1):
-        st.write("Dadurch sind die Emotionen " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
+        print("Dadurch sind die Emotionen " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
     elif(countEmotionsPassive == 1):     
-        st.write("Dadurch ist die Emotion " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
+        print("Dadurch ist die Emotion " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
     else:
-        st.write("Dadurch sind alle Emotionen, die dem Algorithmus bekannt sind, im Tweet enthalten.")
+        print("Dadurch sind alle Emotionen, die dem Algorithmus bekannt sind, im Tweet enthalten.")
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(type(sentence) != str):
-        st.write("Sentence-Parameter is not a String")
+        print("Sentence-Parameter is not a String")
         return
     if(type(dicOfModels) != dict):
-        st.write("dicOfModels-Parameter is not a dictionary")
+        print("dicOfModels-Parameter is not a dictionary")
         return
     if(len(dicOfModels)!=8):
-        st.write("dicOfModels Length is not 8")
+        print("dicOfModels Length is not 8")
         return
         
     #Transforming Sentence into Vector
