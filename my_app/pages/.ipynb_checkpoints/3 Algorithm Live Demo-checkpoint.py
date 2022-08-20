@@ -131,14 +131,14 @@ def getAttributesOfTweet(tweetNumber, df):
             countEmotionsPassive = countEmotionsPassive + 1
     
     if(countEmotionsActive > 1):
-        st.write("The algorithm determined the emotions <b>" + stringOfEmotion +"</b> in the tweet based on the training.")
+        st.write("The algorithm determined the emotions <b>" + stringOfEmotion +"<b>testetstetstet</b> in the tweet based on the training.")
     elif(countEmotionsActive == 1):
         st.write("The algorithm determined the emotion <b>" + stringOfEmotion +"</b> in the tweet based on the training.")
     else:
         st.write("The algorithm did not detect any emotions in the tweet based on the training.")
     
     if(countEmotionsPassive > 1):
-        st.write("Thus, the emotions <b>" + stringOfNotEmotion+ "</b>, according to the algorithm, are not included in the tweet.")
+        st.write("Thus, the emotions <b>" + stringOfNotEmotion+ "<b>testetstetstet</b>, according to the algorithm, are not included in the tweet.")
     elif(countEmotionsPassive == 1):     
         st.write("Thus, the emotion <b>" + stringOfNotEmotion+ "</b> according to the algorithm, is not included in the tweet.")
     else:
