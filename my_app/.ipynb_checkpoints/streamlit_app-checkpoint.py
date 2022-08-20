@@ -36,7 +36,7 @@ st.write("<h4 style='text-align: center;'>Introducing group 9 with the topic Sen
 # Project Description
 
 st.write("<h3 style='text-align: center;'>Projectdescription & Team </h3>",unsafe_allow_html=True)
-st.write("<h5 style='text-align: center;'>Hello we are Philip, Tobias and Thies and we want to create a Twitter Sentiment Analyzer for comments of Members of the German Parliament. For this we want to use Machine Learning to process the dataset provided to us and present the results.</h5>",unsafe_allow_html=True)
+st.write("<h5 style='text-align: center;'>Hello, we are Philip, Tobias, and Thies. We created a Twitter Sentiment Analyzer for tweets and comments of members of the German Parliament. For this, we used Machine Learning to analyze and process tweets and present the results.</h5>",unsafe_allow_html=True)
 row1_1, row1_2, row1_3 = st.columns((1, 1, 1))
 with row1_1:
     st.image("my_app/Philip.jpg", width=215)
