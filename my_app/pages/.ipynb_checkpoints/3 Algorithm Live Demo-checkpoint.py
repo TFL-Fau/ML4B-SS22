@@ -40,7 +40,7 @@ with st.expander("Before you start...", expanded=False):
     
 
 sentence = st.text_input('Please enter a sentence to analyse it on emotions:', '')
-st.write('Your entered sentence is: ', sentence)
+
 
 
 
@@ -153,6 +153,7 @@ def interpretOwnSentence(sentence, dicOfModels, df):
     if(len(dicOfModels)!=8):
         st.write("dicOfModels Length is not 8.")
         return
+    st.write('Your entered sentence is: ', sentence)
         
     #Transforming Sentence into Vector
     dfOfSentence = sentence_toVec(sentence, df)
