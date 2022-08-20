@@ -107,7 +107,7 @@ def sentence_toVec(sentence,goalDF):
 
 def getAttributesOfTweet(tweetNumber, df):
     keys = list(df.keys()[12:20])
-    st.write("---\nTweet \n--- \n" + df["textInput"][tweetNumber]+"\n---")
+    st.write("---\n Tweet\n---\n" + df["textInput"][tweetNumber]+"\n---")
     stringOfEmotion = ""
     stringOfNotEmotion = ""
     countEmotionsActive = 0
@@ -153,7 +153,7 @@ def interpretOwnSentence(sentence, dicOfModels, df):
     if(len(dicOfModels)!=8):
         st.write("dicOfModels Length is not 8.")
         return
-    st.write('Your entered sentence is: ', sentence)
+    #st.write('Your entered sentence is: ', sentence)
         
     #Transforming Sentence into Vector
     dfOfSentence = sentence_toVec(sentence, df)
