@@ -24,21 +24,6 @@ with col3:
 
 # Heading and Topic
 
-st.write("<h1 style='text-align: center;'>Algorithm Live Demo</h1>",unsafe_allow_html=True)
-
-with st.expander("Before you start...", expanded=False):
-
-    st.write("<h4 style='text-align: center;'>Introduction to Live Demo:</h4>",unsafe_allow_html=True)
-    st.write('The Model used in this case was trained on 5000 Tweets of Saskia Esken. Accordingly the results have the highest quality when trying to recognise the emotions of Saskia Eskens tweets.')
-    st.write('Here are a few Tweets of hers, that were not part of the training data set (due to them being very recent) that you can try for yourself.')
-    st.write('- https://twitter.com/EskenSaskia/status/1540694896054370306')
-    st.write('- https://twitter.com/EskenSaskia/status/1540329983553552386')
-    st.write('- https://twitter.com/EskenSaskia/status/1539314052723200000')
-    st.write('- https://twitter.com/EskenSaskia/status/1534638331904118791')
-    st.write('This model could and should be expanded in the future by just training the model on a greater training set with mixed tweets of multiple politicians. But while it is only trained on a single politician it provides its best use at recognising the emotion of tweets, that that politician is writing.')
-    
-    
-
 sentence = st.text_input('Please enter a sentence to analyse it on emotions:', '')
 st.write('Your entered sentence is: ', sentence)
 
