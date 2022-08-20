@@ -107,7 +107,8 @@ def sentence_toVec(sentence,goalDF):
 
 def getAttributesOfTweet(tweetNumber, df):
     keys = list(df.keys()[12:20])
-    st.write("---\n Tweet\n---\n" + df["textInput"][tweetNumber]+"\n---")
+    #st.write("---\n Tweet\n---\n" + df["textInput"][tweetNumber]+"\n---")
+    st.write('Your entered sentence is: ', sentence)
     stringOfEmotion = ""
     stringOfNotEmotion = ""
     countEmotionsActive = 0
