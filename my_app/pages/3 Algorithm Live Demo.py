@@ -143,7 +143,6 @@ def getAttributesOfTweet(tweetNumber, df):
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(len(sentence) == 0):
-        st.write("Bitte gib einen Satz zur Analyse ein.")
         return
     if(type(sentence) != str):
         st.write("Sentence-Parameter is not a String.")
