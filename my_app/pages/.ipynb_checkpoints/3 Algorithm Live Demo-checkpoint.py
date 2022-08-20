@@ -130,7 +130,7 @@ def getAttributesOfTweet(tweetNumber, df):
             stringOfNotEmotion = stringOfNotEmotion + emotionText
             countEmotionsPassive = countEmotionsPassive + 1
     if(countEmotionsActive > 1):
-        st.markdown("The algorithm determined the emotions __" + stringOfEmotion +"__ in the tweet based on the training.")
+        st.markdown("The algorithm determined the emotions " + stringOfEmotion +" in the tweet based on the training.")
     elif(countEmotionsActive == 1):
         st.markdown("The algorithm determined the emotion __**" + stringOfEmotion +"**__  in the tweet based on the training.")
     else:
