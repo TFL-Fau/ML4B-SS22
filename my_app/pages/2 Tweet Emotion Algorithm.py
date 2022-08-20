@@ -24,7 +24,7 @@ st.write("<h1 style='text-align: center;'>Tweet Emotion Algorithm</h1>",unsafe_a
 
 st.write("<h3 style='text-align: center;'>Objective</h3>",unsafe_allow_html=True)
 
-st.write("To accomplish an algorithm that is able to detect emotions in tweets, we used a Decision Tree Regressor algorithm. This algorithm got trained on the basis of our data understanding during 'analysis of tweets' where already existing tweets were judged on their emotional context. With the help of CountVectorisation each tweet was discected and was given to the algorithm as training data, with the goal of recognizing individual emotions within the sentence. Due to processing limitation the model was only trained on 5000 tweets of Saskia Esken, which leads to limitiations for emotion recognition, due to limited amount of vocabulary and diversity. This trainingset needs to be extended in future research with more processing power.")
+st.write("To accomplish an algorithm that can detect emotions in tweets, we used a Decision Tree Regressor algorithm. This algorithm got trained based on our data understanding during 'analysis of tweets' where already existing tweets were judged on their emotional context. With the help of CountVectorisation, each tweet was dissected and was given to the algorithm as training data to recognize individual emotions within the sentence. Due to processing limitations, the model was only trained on 5000 tweets of Saskia Esken, which leads to restrictions for emotion recognition due to the limited amount of vocabulary and diversity. This training set needs to be extended with more processing power in future research.")
 
 st.write("<h4 style='text-align: center;'>Before we started...</h4>",unsafe_allow_html=True)
 
@@ -40,17 +40,17 @@ st.write("More tweets for training were not possible because of our Prozessor an
 st.image("Algo_Result/algotraining.png", width=800)
 
 st.write("<h4 style='text-align: center;'>2. Explanations</h4>",unsafe_allow_html=True)
-st.write("In the following you can see explanations for the Mean Absolute Error, Confusion Matrix, Accuracy, Precision, Recall and f1-Score we used to show our results for every emotion trained:")
+st.write("In the following, you can see explanations for the Mean Absolute Error, Confusion Matrix, Accuracy, Precision, Recall, and f1-Score we used to show our results for every emotion trained:")
 st.write("Explanations: ")
-st.write("- Mean Absolute Error: Mean Absolute Error (MAE) is calculated by taking the summation of the absolute difference between the actual and calculated values of each observation over the entire array and then dividing the sum obtained by the number of observations in the array")
-st.write("- Confusion Matrix: A confusion matrix is a summary of prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. This is the key to the confusion matrix.")
+st.write("- Mean Absolute Error: Mean Absolute Error (MAE) is calculated by taking the summation of the absolute difference between the actual and calculated values of each observation over the entire array and then dividing the sum obtained by the number of observations in the array.")
+st.write("- Confusion Matrix: A confusion matrix summarizes results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. This is the key to the confusion matrix.")
 st.write("- Accuracy: Accuracy means the state of being correct or precise, (TP+TN) / (TP + TN + FP + FN)")
 st.write("- Precision: Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances, (TP+TN) / (TP + TN + FP + FN)")
 st.write("- Recall: Recall (also known as sensitivity) is the fraction of relevant instances that were retrieved, TP/(TP+FP)")
 st.write("- F1-Score: A measure that combines precision and recall is the harmonic mean of Precision and Recall, (2 * TP) / (2 * TP + FP + FN)")
 
 st.write("<h4 style='text-align: center;'>3. Our Results</h4>",unsafe_allow_html=True)
-st.write("In the following you can see the Results in form of the Mean Absolute Error, Confusion Matrix, Accuracy, Precision, Recall and F1-Score for every emotion we trained our model:")
+st.write("In the following, you can see the Results in form of the Mean Absolute Error, Confusion Matrix, Accuracy, Precision, Recall, and F1-Score for every emotion we trained our model:")
 st.image("Algo_Result/r1.png", width=800)
 st.image("Algo_Result/r2.png", width=800)
 st.image("Algo_Result/r3.png", width=800)
@@ -84,11 +84,11 @@ st.write("Result of Comparison: The DecisionTreeClassifier algorithm gives us th
 st.write("<h4 style='text-align: center;'>5. Limitations and Further possible Research</h4>",unsafe_allow_html=True)
 
 st.write("Limitations: ")
-st.write("- The Training data was automatically flagged for emotions with the help of a emotion word list. As a result of this, words have not been put into relation to other words in the same sentence. This results in the training data not being as precise as it would be, if text was flagged by hand.")
-st.write("- This Model was trained on a Limited amount of Tweets and vocabulary of certain politicians. This leads to the Model being limited in the vocabulary and the context that the politician used the tweets in.")
-st.write("- As a further result of being trained on a limited amount of Tweets, certain words might have been used in a limited amount of context. An example for this is herzlichen which normaly would be associated positively, but is flagged as Freude, Traurig, Vertrauen. This can result in certain posts having the emotion Sadness, although its a positive tweet")
-st.write("- Comparison of differen ML-Models is on a very limited Dataset of 1000 tweets due to lack of computation power. This results in the quality of the different model maybe varying when having a different size of data set.")
-st.write("- This results in the Model best being used to analyse the tweet of the politician that the model was trained on. That offers a higher chance of the politician using the same vocabulary in a similiar context.")
+st.write("- The training data was automatically flagged for emotions with the help of an emotion word list. As a result, words have not been compared to other words in the same sentence. This results in the training data not being as precise as it would be if the text were flagged by hand.")
+st.write("- This model was trained on a Limited amount of Tweets and vocabulary of certain politicians. This leads to the model being limited in the vocabulary and context in which the politician used the tweets.")
+st.write("- As a result of being trained on a limited amount of Tweets, certain words might have been used in a limited amount of context. An example is herzlichen which normally would be associated positively but is flagged as Freude, Traurig, Vertrauen. This can result in specific posts having the emotion of Sadness, although it is a positive tweet.")
+st.write("- Comparison of different ML-Models is on a minimal Dataset of 1000 tweets due to lack of computation power. This results in the other model's quality may vary when having a different data set.")
+st.write("- This results in the model best being used to analyze the tweet of the politician that the model was trained on. That offers a higher chance of the politician using the same vocabulary in a similar context.")
 
 st.write("Further possible Research:")
 
