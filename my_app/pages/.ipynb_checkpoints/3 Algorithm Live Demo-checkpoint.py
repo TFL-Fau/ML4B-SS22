@@ -109,7 +109,8 @@ def getAttributesOfTweet(tweetNumber, df):
     keys = list(df.keys()[12:20])
     #st.write("---\n Tweet\n---\n" + df["textInput"][tweetNumber]+"\n---")
     st.write("---\n")
-    st.write('Your entered sentence is: \n', sentence)
+    st.write('Your entered sentence is:')
+    st.write(sentence)
     stringOfEmotion = ""
     stringOfNotEmotion = ""
     countEmotionsActive = 0
@@ -130,18 +131,18 @@ def getAttributesOfTweet(tweetNumber, df):
             countEmotionsPassive = countEmotionsPassive + 1
     
     if(countEmotionsActive > 1):
-        st.write("Der Algorithmus hat anhand des Trainings die Emotionen " + stringOfEmotion +" im Tweet ermittelt.")
+        st.write("The algorithm determined the emotions <b>" + stringOfEmotion +"</b> in the tweet based on the training.")
     elif(countEmotionsActive == 1):
-        st.write("Der Algorithmus hat anhand des Trainings die Emotion " + stringOfEmotion +" im Tweet ermittelt.")
+        st.write("The algorithm determined the emotion <b>" + stringOfEmotion +"</b> in the tweet based on the training.")
     else:
-        st.write("Der Algorithmus hat anhand des Trainings keine Emotionen im Tweet ermittelt.")
+        st.write("The algorithm did not detect any emotions in the tweet based on the training.")
     
     if(countEmotionsPassive > 1):
-        st.write("Dadurch sind die Emotionen " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
+        st.write("Thus, the emotions <b>" + stringOfNotEmotion+ "</b>, according to the algorithm, are not included in the tweet.")
     elif(countEmotionsPassive == 1):     
-        st.write("Dadurch ist die Emotion " + stringOfNotEmotion+ ", laut dem Algorithmus, nicht im Tweet enthalten.")
+        st.write("Thus, the emotion <b>" + stringOfNotEmotion+ "</b> according to the algorithm, is not included in the tweet.")
     else:
-        st.write("Dadurch sind alle Emotionen, die dem Algorithmus bekannt sind, im Tweet enthalten.")
+        st.write("As a result, all emotions known to the algorithm are included in the tweet.")
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(len(sentence) == 0):
