@@ -130,18 +130,18 @@ def getAttributesOfTweet(tweetNumber, df):
             stringOfNotEmotion = stringOfNotEmotion + emotionText
             countEmotionsPassive = countEmotionsPassive + 1
     if(countEmotionsActive > 1):
-        st.markdown("The algorithm determined the emotions ***" + stringOfEmotion +"*** in the tweet based on the training.")
+        st.markdown("The algorithm determined the emotions __**" + stringOfEmotion +"**__ in the tweet based on the training.")
     elif(countEmotionsActive == 1):
-        st.write("The algorithm determined the emotion " + stringOfEmotion +" in the tweet based on the training.")
+        st.markdown("The algorithm determined the emotion __**" + stringOfEmotion +"**__  in the tweet based on the training.")
     else:
-        st.write("The algorithm did not detect any emotions in the tweet based on the training.")
+        st.markdown("The algorithm did not detect any emotions in the tweet based on the training.")
     
     if(countEmotionsPassive > 1):
-        st.write("Thus, the emotions " + stringOfNotEmotion+ ", according to the algorithm, are not included in the tweet.")
+        st.markdown("Thus, the emotions __**" + stringOfNotEmotion+ "**__ , according to the algorithm, are not included in the tweet.")
     elif(countEmotionsPassive == 1):     
-        st.write("Thus, the emotion " + stringOfNotEmotion+ "according to the algorithm, is not included in the tweet.")
+        st.markdown("Thus, the emotion __**" + stringOfNotEmotion+ "**__ according to the algorithm, is not included in the tweet.")
     else:
-        st.write("As a result, all emotions known to the algorithm are included in the tweet.")
+        st.markdown("As a result, all emotions known to the algorithm are included in the tweet.")
 
 def interpretOwnSentence(sentence, dicOfModels, df):
     if(len(sentence) == 0):
