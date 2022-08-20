@@ -142,14 +142,17 @@ def getAttributesOfTweet(tweetNumber, df):
         st.write("Dadurch sind alle Emotionen, die dem Algorithmus bekannt sind, im Tweet enthalten.")
 
 def interpretOwnSentence(sentence, dicOfModels, df):
+    if(len(sentence) == 0):
+        st.write("Bitte gib einen Satz zur Analyse ein.")
+        return
     if(type(sentence) != str):
-        st.write("Sentence-Parameter is not a String")
+        st.write("Sentence-Parameter is not a String.")
         return
     if(type(dicOfModels) != dict):
-        st.write("dicOfModels-Parameter is not a dictionary")
+        st.write("dicOfModels-Parameter is not a dictionary.")
         return
     if(len(dicOfModels)!=8):
-        st.write("dicOfModels Length is not 8")
+        st.write("dicOfModels Length is not 8.")
         return
         
     #Transforming Sentence into Vector
