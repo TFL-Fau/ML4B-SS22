@@ -10,7 +10,11 @@
 ### Link to our Streamlit App
 
 <a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main/my_app/streamlit_app.py"> Streamlit App </a>
- 
+
+### Link to our Video presentation
+
+<a href = "https://www.youtube.com/watch?v=G-J_rIpO2Bo"> Streamlit App </a>
+
 ### Find us on LinkedIn for questions
 <a href = "https://www.linkedin.com/in/tobias-fleming/">Tobias Fleming, </a>
 <a href = "https://www.linkedin.com/in/philip-maron-655209199/">Philip Maron</a>
