@@ -13,7 +13,7 @@
 
 ### Link to our Video presentation
 
-<a href = "https://www.youtube.com/watch?v=G-J_rIpO2Bo"> Streamlit App </a>
+<a href = "https://www.youtube.com/watch?v=G-J_rIpO2Bo"> Youtube Video </a>
 
 ### Find us on LinkedIn for questions
 <a href = "https://www.linkedin.com/in/tobias-fleming/">Tobias Fleming, </a>
