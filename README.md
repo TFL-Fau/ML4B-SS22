@@ -7,11 +7,9 @@
 
 <div>
 
-### Link to our Streamlit App
+### Link to our Streamlit App and Video presentation
 
 <a href = "https://share.streamlit.io/tfl-fau/ml4b-ss22/main/my_app/streamlit_app.py"> Streamlit App </a>
-
-### Link to our Video presentation
 
 <a href = "https://www.youtube.com/watch?v=G-J_rIpO2Bo"> Youtube Video </a>
 
